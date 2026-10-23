@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;min-height:100%;margin:0;padding:0;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}details summary::-webkit-details-marker{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'inverse-primary': '#edbd95', 'surface-container-highest': '#e6e2da', 'on-primary': '#ffffff', 'primary-fixed-dim': '#edbd95', 'on-surface': '#1c1c17', 'surface-container-lowest': '#ffffff', 'secondary-fixed-dim': '#cac6bc', 'surface-container': '#f1ede5', 'inverse-surface': '#31302b', 'outline-variant': '#d4c3b8', 'tertiary-container': '#81735c', 'on-secondary-fixed-variant': '#48473f', 'tertiary-fixed': '#f3e0c5', 'tertiary-fixed-dim': '#d6c4aa', 'on-error-container': '#93000a', 'outline': '#82756b', 'on-tertiary': '#ffffff', 'on-tertiary-fixed': '#231a09', 'on-tertiary-container': '#fffbff', 'surface-tint': '#7b5736', 'surface-dim': '#dddad2', 'primary-container': '#946c4a', 'on-primary-fixed-variant': '#613f21', 'on-background': '#1c1c17', 'error-container': '#ffdad6', 'primary-fixed': '#ffdcc1', 'on-primary-container': '#fffbff', 'background': '#fdf9f1', 'primary': '#795434', 'surface-container-high': '#ece8e0', 'secondary': '#605e56', 'secondary-container': '#e6e2d7', 'on-secondary-fixed': '#1d1c15', 'on-secondary-container': '#66645c', 'on-secondary': '#ffffff', 'surface-container-low': '#f7f3eb', 'surface-bright': '#fdf9f1', 'on-tertiary-fixed-variant': '#514531', 'error': '#ba1a1a', 'inverse-on-surface': '#f4f0e8', 'secondary-fixed': '#e6e2d7', 'surface-variant': '#e6e2da', 'on-primary-fixed': '#2e1500', 'on-surface-variant': '#50453c', 'on-error': '#ffffff', 'tertiary': '#675a45', 'surface': '#fdf9f1' }, borderRadius: { 'DEFAULT': '0.125rem', 'lg': '0.25rem', 'xl': '0.5rem', 'full': '0.75rem' }, spacing: { 'space-lg': '1.75rem', 'margin': '1.25rem', 'margin-tablet': '2.5rem', 'gutter-desktop': '2.5rem', 'space-sm': '0.5rem', 'margin-desktop': '4.5rem', 'space-2xl': '5rem', 'gutter': '1.5rem', 'space-xl': '3rem', 'space-xs': '0.25rem', 'space-md': '1rem' }, fontFamily: { 'headline-lg': ['Playfair Display'], 'label-nav': ['Plus Jakarta Sans'], 'headline-md': ['Playfair Display'], 'body-sm': ['Plus Jakarta Sans'], 'body-md': ['Plus Jakarta Sans'], 'display-hero-mobile': ['Playfair Display'], 'label-caps': ['Plus Jakarta Sans'], 'body-lg': ['Plus Jakarta Sans'], 'title-editorial': ['Playfair Display'], 'headline-sm': ['Playfair Display'], 'headline-lg-mobile': ['Playfair Display'], 'display-hero': ['Playfair Display'], 'label-price': ['Plus Jakarta Sans'] }, fontSize: { 'headline-lg': ['40px', { lineHeight: '48px', letterSpacing: '-0.01em', fontWeight: '400' }], 'label-nav': ['12px', { lineHeight: '16px', letterSpacing: '0.10em', fontWeight: '500' }], 'headline-md': ['28px', { lineHeight: '36px', letterSpacing: '0em', fontWeight: '500' }], 'body-sm': ['13px', { lineHeight: '20px', letterSpacing: '0.02em', fontWeight: '400' }], 'body-md': ['15px', { lineHeight: '24px', letterSpacing: '0.01em', fontWeight: '400' }], 'display-hero-mobile': ['36px', { lineHeight: '44px', letterSpacing: '-0.01em', fontWeight: '400' }], 'label-caps': ['11px', { lineHeight: '16px', letterSpacing: '0.14em', fontWeight: '600' }], 'body-lg': ['18px', { lineHeight: '28px', letterSpacing: '0.01em', fontWeight: '400' }], 'title-editorial': ['18px', { lineHeight: '26px', letterSpacing: '0.02em', fontWeight: '600' }], 'headline-sm': ['22px', { lineHeight: '30px', letterSpacing: '0.01em', fontWeight: '500' }], 'headline-lg-mobile': ['28px', { lineHeight: '36px', letterSpacing: '0em', fontWeight: '400' }], 'display-hero': ['56px', { lineHeight: '64px', letterSpacing: '-0.02em', fontWeight: '400' }], 'label-price': ['16px', { lineHeight: '22px', letterSpacing: '0.04em', fontWeight: '600' }] } } } };</script></head><body class="bg-background font-body-md text-on-surface min-h-screen flex flex-col selection:bg-surface-variant"><header class="fixed top-0 w-full z-50 pt-safe"><div class="bg-surface-container-high/95 text-on-surface-variant font-label-caps text-label-caps tracking-widest text-center py-1.5 px-margin uppercase select-none">Complimentary White-Glove Logistics across Tunisia</div><div class="h-20 bg-surface/85 backdrop-blur-xl px-margin flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="flex items-center gap-space-xs"><button aria-label="Open Navigation Menu" class="min-w-[44px] min-h-[44px] flex items-center justify-center text-on-surface transition-colors hover:text-primary" onclick="document.getElementById('mobile-drawer').classList.remove('translate-x-full');document.getElementById('drawer-backdrop').classList.remove('opacity-0','pointer-events-none');" type="button"><span class="material-symbols-outlined text-[26px]">menu</span></button></div><a class="flex items-center" data-path="curated-home" href="#"><span class="font-headline-md text-headline-md tracking-[0.25em] text-on-surface uppercase pl-2">E L B O X</span></a><div class="flex items-center gap-space-xs"><button aria-label="Search Catalog" class="min-w-[44px] min-h-[44px] flex items-center justify-center text-on-surface hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[24px]">search</span></button><a aria-label="Shopping Bag" class="min-w-[44px] min-h-[44px] relative flex items-center justify-center text-on-surface hover:text-primary transition-colors" data-path="shopping-bag" href="#"><span class="material-symbols-outlined text-[24px]">local_mall</span><span class="absolute top-2 right-2 bg-primary text-on-primary font-label-caps text-[10px] w-4 h-4 rounded-full flex items-center justify-center">2</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300" id="drawer-backdrop" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full');document.getElementById('drawer-backdrop').classList.add('opacity-0','pointer-events-none');"></div><aside class="fixed top-0 right-0 h-full w-[85vw] max-w-[380px] z-50 bg-surface flex flex-col justify-between pt-safe pb-safe translate-x-full transition-transform duration-300 ease-out shadow-[-16px_0_36px_-12px_rgba(41,40,33,0.12)]" id="mobile-drawer"><div class="flex flex-col h-full overflow-y-auto px-margin"><div class="h-20 flex items-center justify-between"><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Navigation</span><button class="min-w-[44px] min-h-[44px] flex items-center justify-center text-on-surface hover:text-primary" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full');document.getElementById('drawer-backdrop').classList.add('opacity-0','pointer-events-none');" type="button"><span class="material-symbols-outlined text-[24px]">close</span></button></div><div class="py-space-md flex flex-col gap-space-md"><a class="font-headline-sm text-headline-sm text-on-surface hover:text-primary transition-colors" data-path="shop-catalog" href="#">Shop</a><a class="font-headline-sm text-headline-sm text-on-surface hover:text-primary transition-colors" data-path="curated-collections" href="#">Collections</a><a class="font-headline-sm text-headline-sm text-on-surface hover:text-primary transition-colors" data-path="new-arrivals" href="#">New Arrivals</a><a class="font-headline-sm text-headline-sm text-on-surface hover:text-primary transition-colors" data-path="curated-sets" href="#">Curated Sets</a><a class="font-headline-sm text-headline-sm text-on-surface hover:text-primary transition-colors" data-path="styling-journal" href="#">Styling Journal</a><a class="font-headline-sm text-headline-sm text-on-surface hover:text-primary transition-colors" data-path="about-elbox" href="#">About ELBOX</a><a class="font-headline-sm text-headline-sm text-on-surface hover:text-primary transition-colors" data-path="showroom-appointments" href="#">Showroom Appointments</a></div><div class="mt-auto pt-space-lg pb-space-md"><div class="bg-surface-container-low p-space-md rounded-lg flex items-center justify-between"><div class="flex flex-col"><span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Showrooms</span><span class="font-body-sm text-body-sm text-on-surface">La Marsa • Sidi Bou Saïd</span></div><span class="material-symbols-outlined text-primary">storefront</span></div><div class="mt-space-md flex items-center justify-between pt-space-md"><span class="font-label-nav text-label-nav text-on-surface-variant uppercase">Currency</span><div class="inline-flex items-center gap-space-xs font-label-price text-label-price text-on-surface"><span class="w-2 h-2 rounded-full bg-primary"></span><span>TND (د.ت)</span></div></div></div></div></aside><main class="flex-1 flex flex-col relative w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Editorial Page Intro -->
+<section class="px-margin pt-space-md pb-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary">Tunis Atelier Edition 04</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Atelier Catalog — Selected Works</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center justify-between mt-0.5">
+<span>Handcrafted Mediterranean vessel forms &amp; architectural artifacts.</span>
+<span class="font-label-caps text-label-caps text-secondary font-semibold uppercase tracking-wider ml-2 shrink-0">18 Curated Objects</span>
+</p>
+</div>
+</section>
+<!-- Sticky Filter & Sort Control Bar -->
+<div class="sticky top-20 z-30 bg-surface/95 backdrop-blur-md shadow-sm">
+<div class="px-margin py-space-xs flex items-center justify-between gap-space-sm">
+<!-- Filter Button Trigger -->
+<button class="flex-1 min-h-[42px] px-3 bg-surface-container hover:bg-surface-container-high transition-colors text-on-surface rounded flex items-center justify-center gap-2" id="open-filter-btn" onclick="document.getElementById('filter-drawer').classList.remove('translate-y-full'); document.getElementById('filter-backdrop').classList.remove('opacity-0', 'pointer-events-none');" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">tune</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider font-semibold">Filter</span>
+<span class="bg-primary text-on-primary text-[10px] font-bold px-1.5 py-0.5 rounded-full">2</span>
+</button>
+<!-- Sort Dropdown Trigger -->
+<button class="flex-1 min-h-[42px] px-3 bg-surface-container-low hover:bg-surface-container transition-colors text-on-surface rounded flex items-center justify-between gap-1" id="sort-trigger-btn" onclick="toggleSortMenu()" type="button">
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[17px] text-secondary">swap_vert</span>
+<span class="font-label-nav text-label-nav truncate text-on-surface-variant">Sort: <strong class="text-on-surface font-semibold">Curated</strong></span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0">expand_more</span>
+</button>
+</div>
+<!-- Active Filter Chips Row -->
+<div class="px-margin pb-2.5 overflow-x-auto no-scrollbar flex items-center gap-2">
+<!-- Active 1 -->
+<div class="inline-flex items-center gap-1.5 bg-inverse-surface text-inverse-on-surface px-2.5 py-1 rounded text-label-caps font-label-caps whitespace-nowrap shadow-sm">
+<span>Smoked Glass</span>
+<button aria-label="Remove Smoked Glass filter" class="flex items-center justify-center hover:text-inverse-primary" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+<!-- Active 2 -->
+<div class="inline-flex items-center gap-1.5 bg-inverse-surface text-inverse-on-surface px-2.5 py-1 rounded text-label-caps font-label-caps whitespace-nowrap shadow-sm">
+<span>Amber Glass</span>
+<button aria-label="Remove Amber Glass filter" class="flex items-center justify-center hover:text-inverse-primary" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+<!-- Suggestion Filter Chips -->
+<button class="inline-flex items-center bg-surface-container text-on-surface-variant hover:text-on-surface px-2.5 py-1 rounded text-label-caps font-label-caps whitespace-nowrap transition-colors" type="button">
+        Glazed Ceramic
+      </button>
+<button class="inline-flex items-center bg-surface-container text-on-surface-variant hover:text-on-surface px-2.5 py-1 rounded text-label-caps font-label-caps whitespace-nowrap transition-colors" type="button">
+        Alabaster &amp; Marble
+      </button>
+<!-- Clear All -->
+<button class="text-primary hover:text-on-surface text-label-caps font-label-caps whitespace-nowrap underline px-1 py-1" type="button">
+        Clear All
+      </button>
+</div>
+</div>
+<!-- Interactive Sort Popup Menu -->
+<div class="hidden fixed inset-x-margin top-40 z-40 bg-surface-container-lowest p-2 rounded shadow-xl flex flex-col gap-1 transition-all" id="sort-menu">
+<button class="w-full text-left px-3 py-2 text-body-sm font-body-sm text-primary font-semibold rounded bg-surface-container flex items-center justify-between" onclick="selectSort('Curated Selection')" type="button">
+<span>Curated Selection</span>
+<span class="material-symbols-outlined text-[16px]">check</span>
+</button>
+<button class="w-full text-left px-3 py-2 text-body-sm font-body-sm text-on-surface hover:bg-surface-container-low rounded" onclick="selectSort('Price: Low to High')" type="button">
+      Price: Low to High
+    </button>
+<button class="w-full text-left px-3 py-2 text-body-sm font-body-sm text-on-surface hover:bg-surface-container-low rounded" onclick="selectSort('Price: High to Low')" type="button">
+      Price: High to Low
+    </button>
+<button class="w-full text-left px-3 py-2 text-body-sm font-body-sm text-on-surface hover:bg-surface-container-low rounded" onclick="selectSort('Newest Studio Release')" type="button">
+      Newest Studio Release
+    </button>
+</div>
+<!-- Two-Column Mobile Product Grid -->
+<section class="px-margin py-space-md">
+<div class="grid grid-cols-2 gap-x-3 gap-y-6">
+<!-- Card 1 -->
+<article class="flex flex-col group">
+<div class="relative w-full aspect-[4/5] bg-surface-container-high rounded overflow-hidden">
+<img alt="Ambre Fluted Vessel &amp; Ceramic Knot" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPH91FV-Cinkmz654uLvJjRqN8p9_YZBixcXHNbqCu2pbBabYExqgvMPDI3-maO_dTYLssLzVm2uq5qkQbZPPtKqrLkCruZK99of3pZilYUAYOWSdEZKG1m1Ri9C3U5T3BE-nmUInjDYM0PIuKq96kF2cSWGmtPVqBtkspzp7mzFLI1xQW8vpiF6m4j_0ia6puCOABbBC4uBVfZau6IH0HCSoLmHHdzP2Poy2rTLHyETUwbsTwUJw_j-5MMJ0BwrNtFlo"/>
+<button aria-label="Save to Wishlist" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface/85 backdrop-blur-sm text-on-surface flex items-center justify-center transition-colors" onclick="toggleHeart(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<div class="absolute bottom-2 left-2 bg-surface/90 backdrop-blur-sm px-2 py-0.5 rounded text-[10px] font-label-caps uppercase tracking-wider text-on-surface font-semibold">
+            Amber &amp; Clay
+          </div>
+</div>
+<div class="flex flex-col mt-2.5">
+<span class="font-label-caps text-[10px] uppercase tracking-wider text-primary font-medium">Bespoke Glassware</span>
+<h2 class="font-title-editorial text-title-editorial text-on-surface line-clamp-1 mt-0.5">Ambre Fluted Vessel &amp; Knot</h2>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-label-price text-label-price text-on-surface">240 TND</span>
+<span class="font-body-sm text-[11px] text-secondary">In Stock</span>
+</div>
+<button class="mt-2.5 w-full py-2 bg-inverse-surface hover:bg-primary transition-colors text-inverse-on-surface rounded font-label-caps text-[11px] uppercase tracking-wider text-center" onclick="quickAddNotify(this, 'Ambre Fluted Vessel &amp; Knot')" type="button">
+            Inquire / Add
+          </button>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="flex flex-col group">
+<div class="relative w-full aspect-[4/5] bg-surface-container-high rounded overflow-hidden">
+<img alt="Spiral Candelabra &amp; Amber Monolith" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDO1ph0EDKrAF71I7D1JPvjd8E2Oq_gupQ1_cq41m0DQz-dB0LTYTubIF-XhdjYFMbLNZ_L-idejkj0ryyfDG9_uvoL9tTZxNX05BC4YPZvK08F6BP_lCU87B9FtFu1f3XEimm7aIbc7qWmINJFNfl040C7QucmZ1uLIJYjrfmDEuajuvp0WK23ZkSyz9d_fuzgnr3yr0GN-zqoTD8MpS_bmOa33ZFcYJLMEB_PuM-UyP-HSsEQzgkU-oVWgsKzaLhvq68"/>
+<button aria-label="Save to Wishlist" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface/85 backdrop-blur-sm text-on-surface flex items-center justify-center transition-colors" onclick="toggleHeart(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<div class="absolute bottom-2 left-2 bg-surface/90 backdrop-blur-sm px-2 py-0.5 rounded text-[10px] font-label-caps uppercase tracking-wider text-on-surface font-semibold">
+            Smoked Monolith
+          </div>
+</div>
+<div class="flex flex-col mt-2.5">
+<span class="font-label-caps text-[10px] uppercase tracking-wider text-primary font-medium">Architectural Wax</span>
+<h2 class="font-title-editorial text-title-editorial text-on-surface line-clamp-1 mt-0.5">Spiral Candelabra Ensemble</h2>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-label-price text-label-price text-on-surface">310 TND</span>
+<span class="font-body-sm text-[11px] text-secondary">Limited Run</span>
+</div>
+<button class="mt-2.5 w-full py-2 bg-inverse-surface hover:bg-primary transition-colors text-inverse-on-surface rounded font-label-caps text-[11px] uppercase tracking-wider text-center" onclick="quickAddNotify(this, 'Spiral Candelabra Ensemble')" type="button">
+            Inquire / Add
+          </button>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="flex flex-col group">
+<div class="relative w-full aspect-[4/5] bg-surface-container-high rounded overflow-hidden">
+<img alt="Aura Peony Vessel &amp; Cyan Meditators" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2R-mIfcr4vcnG4IKaUamVL4O-pek3XjX1jbuYYRCQx4GbS3_dei73ZwWVsleOYlvPdbZm6VTUYoUhiCMcb9lMulroZnejAZohRm03FUoHRCaJ6btz35qvqr2kCjErDPfXomtoSHoaOS7prs04qn4R7IWltWp-7n3EWEs326mNWOGwHMAnJhORnIEMw54eW8NjSjlrZcWLDhKO9cp7XZ56OzYqHv3PJAmfnb-ms70_qrsJy_YGQ3tcv15b4poUI1zQ61Y"/>
+<button aria-label="Save to Wishlist" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface/85 backdrop-blur-sm text-on-surface flex items-center justify-center transition-colors" onclick="toggleHeart(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<div class="absolute bottom-2 left-2 bg-surface/90 backdrop-blur-sm px-2 py-0.5 rounded text-[10px] font-label-caps uppercase tracking-wider text-on-surface font-semibold">
+            Cyan &amp; Peony
+          </div>
+</div>
+<div class="flex flex-col mt-2.5">
+<span class="font-label-caps text-[10px] uppercase tracking-wider text-primary font-medium">Ceramic Sculpture</span>
+<h2 class="font-title-editorial text-title-editorial text-on-surface line-clamp-1 mt-0.5">Aura Peony &amp; Cyan Meditators</h2>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-label-price text-label-price text-on-surface">275 TND</span>
+<span class="font-body-sm text-[11px] text-secondary">Showroom</span>
+</div>
+<button class="mt-2.5 w-full py-2 bg-inverse-surface hover:bg-primary transition-colors text-inverse-on-surface rounded font-label-caps text-[11px] uppercase tracking-wider text-center" onclick="quickAddNotify(this, 'Aura Peony &amp; Cyan Meditators')" type="button">
+            Inquire / Add
+          </button>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="flex flex-col group">
+<div class="relative w-full aspect-[4/5] bg-surface-container-high rounded overflow-hidden">
+<img alt="Urban Architecture Fluted Amber Vessel" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgR9L30cd7wp13q4h-9lbREhW9UUGM3BsGsBLKVz9O98rwllp41xl3X3qXqSLiU9tDtuxI5KZNCngWMcMtFb0swJNcN1T5QYFmWZoN8o23xGRtnDgEcdiyUApvKz7nLLHkeKLdexpiisimtGUI5wbPxTLVcoevjPSFQ737B6DD1m2aZmbz-Romz9gAz8_moP-IJ965LqaHVqUt9wOFoWQSi3U1U_0rbm5XCdFSOw2E1kAj78Ecta0xJPchWZmqg3FqzxY"/>
+<button aria-label="Save to Wishlist" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface/85 backdrop-blur-sm text-on-surface flex items-center justify-center transition-colors" onclick="toggleHeart(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<div class="absolute bottom-2 left-2 bg-surface/90 backdrop-blur-sm px-2 py-0.5 rounded text-[10px] font-label-caps uppercase tracking-wider text-on-surface font-semibold">
+            Molded Flutes
+          </div>
+</div>
+<div class="flex flex-col mt-2.5">
+<span class="font-label-caps text-[10px] uppercase tracking-wider text-primary font-medium">Mouth-Blown Glass</span>
+<h2 class="font-title-editorial text-title-editorial text-on-surface line-clamp-1 mt-0.5">Urban Fluted Amber Vessel</h2>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-label-price text-label-price text-on-surface">240 TND</span>
+<span class="font-body-sm text-[11px] text-secondary">In Stock</span>
+</div>
+<button class="mt-2.5 w-full py-2 bg-inverse-surface hover:bg-primary transition-colors text-inverse-on-surface rounded font-label-caps text-[11px] uppercase tracking-wider text-center" onclick="quickAddNotify(this, 'Urban Fluted Amber Vessel')" type="button">
+            Inquire / Add
+          </button>
+</div>
+</article>
+<!-- Card 5 -->
+<article class="flex flex-col group">
+<div class="relative w-full aspect-[4/5] bg-surface-container-high rounded overflow-hidden">
+<img alt="Carthage Hammered Brass Orb Vessels" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDwfGWdbgYmH5WFBkjHzbSaCGRe8pxgRxwDMbVNr1RmBuAklz661dQB4MGO1tj5iUy_pGApqSL5sN7Ek2GJygRdDMu8fWgAbjY2SaTdP5gngPc3SC-tMABoZ1hlC4FwzbFtdmeOzUA5aHzXF96bsSQr82paVc7u-X3O5KnUHgVJpXpQ1WihlsEumu20BX79EkgwjJAFz2W0qSn3XU0prI091rO0g6fZfp7Zl6XOgwU6Fdnp5bbkY0S8OSkZQTz15CTgSo"/>
+<button aria-label="Save to Wishlist" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface/85 backdrop-blur-sm text-on-surface flex items-center justify-center transition-colors" onclick="toggleHeart(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<div class="absolute bottom-2 left-2 bg-surface/90 backdrop-blur-sm px-2 py-0.5 rounded text-[10px] font-label-caps uppercase tracking-wider text-on-surface font-semibold">
+            Chiseled Brass
+          </div>
+</div>
+<div class="flex flex-col mt-2.5">
+<span class="font-label-caps text-[10px] uppercase tracking-wider text-primary font-medium">Metalsmith Atelier</span>
+<h2 class="font-title-editorial text-title-editorial text-on-surface line-clamp-1 mt-0.5">Carthage Hammered Brass Orbs</h2>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-label-price text-label-price text-on-surface">295 TND</span>
+<span class="font-body-sm text-[11px] text-secondary">Tunis Heritage</span>
+</div>
+<button class="mt-2.5 w-full py-2 bg-inverse-surface hover:bg-primary transition-colors text-inverse-on-surface rounded font-label-caps text-[11px] uppercase tracking-wider text-center" onclick="quickAddNotify(this, 'Carthage Hammered Brass Orbs')" type="button">
+            Inquire / Add
+          </button>
+</div>
+</article>
+<!-- Card 6 -->
+<article class="flex flex-col group">
+<div class="relative w-full aspect-[4/5] bg-surface-container-high rounded overflow-hidden">
+<img alt="Forest Emerald Fluted Triple Ensemble" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm9yej5hAEwR6Y1xSXnLbYmYexVB6ckdEGo_TCMcfCK8k7ivyMeMW5JLgTjlhCxwfI1kUsCBE7fHgV31E2vtnuY-SS3HF53tKIjx4ovEHsIF3JAg_GEkFSP8Jm_dKZPAiG2ZcPwVRQKkQhgWWQESZsWKPG7prB2wWCXaUhxmOS0lDzzj2EQIP5cxMRvAB2aX8tv_oa6QzJlNRxaDhVY0uX1XptSMGuICXWkAb_Jc5yVQNrBUvYFUSHKqDl0ZGVKne4Mm4"/>
+<button aria-label="Save to Wishlist" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface/85 backdrop-blur-sm text-on-surface flex items-center justify-center transition-colors" onclick="toggleHeart(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<div class="absolute bottom-2 left-2 bg-surface/90 backdrop-blur-sm px-2 py-0.5 rounded text-[10px] font-label-caps uppercase tracking-wider text-on-surface font-semibold">
+            Tonal Trio
+          </div>
+</div>
+<div class="flex flex-col mt-2.5">
+<span class="font-label-caps text-[10px] uppercase tracking-wider text-primary font-medium">Emerald &amp; Amber</span>
+<h2 class="font-title-editorial text-title-editorial text-on-surface line-clamp-1 mt-0.5">Forest Emerald Fluted Ensemble</h2>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-label-price text-label-price text-on-surface">340 TND</span>
+<span class="font-body-sm text-[11px] text-secondary">3 Pieces</span>
+</div>
+<button class="mt-2.5 w-full py-2 bg-inverse-surface hover:bg-primary transition-colors text-inverse-on-surface rounded font-label-caps text-[11px] uppercase tracking-wider text-center" onclick="quickAddNotify(this, 'Forest Emerald Fluted Ensemble')" type="button">
+            Inquire / Add
+          </button>
+</div>
+</article>
+<!-- Card 7 -->
+<article class="flex flex-col group">
+<div class="relative w-full aspect-[4/5] bg-surface-container-high rounded overflow-hidden">
+<img alt="Amber Torchiere &amp; Golden Lotus Ensemble" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1aqZzaoDXUoYb5XNIHf3dHeUOiapOiyR-4pdaZFYazUMcpmg-ll_4VVdxXbJmTZHOb-yKfJNh9-jheA6GqIZcfb6fgD7WdTkkVBHVlN7dDIry3S0utT-rchvnYgf6Pt_UF8o9-1I29L79FSu-5duYOBcP6nev4CcCZPGiXU3AiX0r16i4ipOJGubi-Q6noWARC3RZYy2jOaIp9LSGwBkSkkPBBxDa7-NdaZ6Eh1NxsCwXvkteVI_OatSwS407U-BL-ts"/>
+<button aria-label="Save to Wishlist" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface/85 backdrop-blur-sm text-on-surface flex items-center justify-center transition-colors" onclick="toggleHeart(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<div class="absolute bottom-2 left-2 bg-surface/90 backdrop-blur-sm px-2 py-0.5 rounded text-[10px] font-label-caps uppercase tracking-wider text-on-surface font-semibold">
+            Ambient Light
+          </div>
+</div>
+<div class="flex flex-col mt-2.5">
+<span class="font-label-caps text-[10px] uppercase tracking-wider text-primary font-medium">Warm Luminary</span>
+<h2 class="font-title-editorial text-title-editorial text-on-surface line-clamp-1 mt-0.5">Amber Torchiere &amp; Lotus</h2>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-label-price text-label-price text-on-surface">390 TND</span>
+<span class="font-body-sm text-[11px] text-secondary">Signature</span>
+</div>
+<button class="mt-2.5 w-full py-2 bg-inverse-surface hover:bg-primary transition-colors text-inverse-on-surface rounded font-label-caps text-[11px] uppercase tracking-wider text-center" onclick="quickAddNotify(this, 'Amber Torchiere &amp; Lotus')" type="button">
+            Inquire / Add
+          </button>
+</div>
+</article>
+<!-- Card 8 -->
+<article class="flex flex-col group">
+<div class="relative w-full aspect-[4/5] bg-surface-container-high rounded overflow-hidden">
+<img alt="Alabaster Meditative Silhouette Pair" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAosgY1YHH0jO7YBuXksBhxvNmoeinbkRU4ZurdzEfuOg-7h8V5itPL1TJYorI80DKwSR3-kshnloMyHfcht_FG4pN2VpV4Y-8QY8rdA5qGCoHvsFLKiI2M27pS0I9yEOcfTBRsY4O4UVD8-zHsUOQNyDkwHSiujI8csR0Em5_ORut4u73NuGn9hlmQTzGUHj2ZqbI5fjcnjk1dtqIIBz6OJT5KYTbEXXSktmLSdrXP3taxhAAVw6j6IlCaXxQcQyQhWDI"/>
+<button aria-label="Save to Wishlist" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface/85 backdrop-blur-sm text-on-surface flex items-center justify-center transition-colors" onclick="toggleHeart(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<div class="absolute bottom-2 left-2 bg-surface/90 backdrop-blur-sm px-2 py-0.5 rounded text-[10px] font-label-caps uppercase tracking-wider text-on-surface font-semibold">
+            Carved Stone
+          </div>
+</div>
+<div class="flex flex-col mt-2.5">
+<span class="font-label-caps text-[10px] uppercase tracking-wider text-primary font-medium">Alabaster Sculpture</span>
+<h2 class="font-title-editorial text-title-editorial text-on-surface line-clamp-1 mt-0.5">Alabaster Silhouette Pair</h2>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-label-price text-label-price text-on-surface">280 TND</span>
+<span class="font-body-sm text-[11px] text-secondary">Hand-Carved</span>
+</div>
+<button class="mt-2.5 w-full py-2 bg-inverse-surface hover:bg-primary transition-colors text-inverse-on-surface rounded font-label-caps text-[11px] uppercase tracking-wider text-center" onclick="quickAddNotify(this, 'Alabaster Silhouette Pair')" type="button">
+            Inquire / Add
+          </button>
+</div>
+</article>
+</div>
+</section>
+<!-- Editorial Niche Highlight Banner -->
+<section class="px-margin my-space-sm">
+<div class="bg-surface-container p-space-md rounded flex flex-col gap-2">
+<span class="font-label-caps text-[10px] uppercase tracking-widest text-primary font-semibold">Private Viewing Consultation</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Seek guidance for custom spatial curation?</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Our La Marsa and Sidi Bou Saïd design consultants provide in-home or digital styling ensembles.</p>
+<div class="pt-1">
+<a class="inline-flex items-center gap-1.5 font-label-caps text-label-caps uppercase tracking-wider text-primary font-semibold" data-path="showroom-appointments" href="#">
+<span>Schedule an Atelier Appointment</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Pagination & Progress State -->
+<section class="px-margin pt-space-md pb-space-lg flex flex-col items-center text-center">
+<!-- Progress Indicator -->
+<div class="w-full max-w-[240px] flex flex-col gap-1.5 mb-4">
+<div class="flex justify-between items-center text-[12px] font-label-nav text-on-surface-variant">
+<span>Curated Works</span>
+<span class="font-semibold text-on-surface">Showing 8 of 18</span>
+</div>
+<div class="w-full h-1 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 44.4%;"></div>
+</div>
+</div>
+<!-- Action Button -->
+<button class="w-full max-w-xs min-h-[46px] px-6 bg-surface-container hover:bg-surface-container-high transition-colors text-on-surface font-label-caps text-label-caps uppercase tracking-widest rounded flex items-center justify-center gap-2" id="load-more-btn" onclick="handleLoadMore(this)" type="button">
+<span>Load More Objects</span>
+<span class="material-symbols-outlined text-[18px]">keyboard_arrow_down</span>
+</button>
+<span class="font-body-sm text-[12px] text-secondary mt-2">White-glove courier dispatch to all 24 Tunisian governorates.</span>
+</section>
+<!-- Quick Feedback Toast -->
+<div class="fixed bottom-20 inset-x-margin z-50 pointer-events-none opacity-0 translate-y-3 transition-all duration-300" id="quick-toast">
+<div class="bg-inverse-surface text-inverse-on-surface px-4 py-3 rounded shadow-xl flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-inverse-primary text-[20px]">check_circle</span>
+<span class="font-body-sm text-body-sm" id="toast-text">Added to Atelier inquiry list</span>
+</div>
+<span class="font-label-caps text-[10px] tracking-widest uppercase text-inverse-primary">Saved</span>
+</div>
+</div>
+<!-- Bottom Sheet / Filter Drawer Overlay -->
+<div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300" id="filter-backdrop" onclick="closeFilterDrawer()"></div>
+<div class="fixed bottom-0 inset-x-0 z-50 bg-surface rounded-t-xl max-h-[88vh] flex flex-col translate-y-full transition-transform duration-300 ease-out shadow-[-16px_0_36px_-12px_rgba(41,40,33,0.18)]" id="filter-drawer">
+<!-- Drawer Grab Handle & Header -->
+<div class="pt-3 pb-2 px-margin flex flex-col items-center shrink-0">
+<div class="w-10 h-1 bg-surface-container-highest rounded-full mb-3"></div>
+<div class="w-full flex items-center justify-between">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Curate Collection</h2>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Filter by artisan materials and spatial aesthetics</p>
+</div>
+<button aria-label="Close Filter Dialog" class="min-w-[40px] min-h-[40px] flex items-center justify-center text-on-surface-variant hover:text-on-surface" onclick="closeFilterDrawer()" type="button">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+</div>
+</div>
+<!-- Filter Form Options Scrollable -->
+<div class="flex-1 overflow-y-auto px-margin py-space-sm flex flex-col gap-space-md">
+<!-- Category 1: Material Finish -->
+<div class="flex flex-col gap-2.5">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-primary font-semibold">Material Finish</span>
+<div class="flex flex-wrap gap-2">
+<label class="cursor-pointer inline-flex items-center gap-2 bg-inverse-surface text-inverse-on-surface px-3 py-1.5 rounded text-body-sm">
+<input checked="" class="hidden" type="checkbox"/>
+<span class="material-symbols-outlined text-[16px] text-inverse-primary">check</span>
+<span>Amber Glass (6)</span>
+</label>
+<label class="cursor-pointer inline-flex items-center gap-2 bg-inverse-surface text-inverse-on-surface px-3 py-1.5 rounded text-body-sm">
+<input checked="" class="hidden" type="checkbox"/>
+<span class="material-symbols-outlined text-[16px] text-inverse-primary">check</span>
+<span>Smoked Glass (4)</span>
+</label>
+<label class="cursor-pointer inline-flex items-center gap-2 bg-surface-container hover:bg-surface-container-high text-on-surface px-3 py-1.5 rounded text-body-sm">
+<input class="hidden" type="checkbox"/>
+<span>Alabaster &amp; Marble (3)</span>
+</label>
+<label class="cursor-pointer inline-flex items-center gap-2 bg-surface-container hover:bg-surface-container-high text-on-surface px-3 py-1.5 rounded text-body-sm">
+<input class="hidden" type="checkbox"/>
+<span>Hammered Brass (2)</span>
+</label>
+<label class="cursor-pointer inline-flex items-center gap-2 bg-surface-container hover:bg-surface-container-high text-on-surface px-3 py-1.5 rounded text-body-sm">
+<input class="hidden" type="checkbox"/>
+<span>Glazed Terracotta (3)</span>
+</label>
+</div>
+</div>
+<!-- Category 2: Discipline -->
+<div class="flex flex-col gap-2.5">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-primary font-semibold">Discipline</span>
+<div class="grid grid-cols-2 gap-2">
+<div class="p-2.5 rounded bg-surface-container-low flex items-center justify-between cursor-pointer">
+<span class="font-body-sm text-body-sm text-on-surface">Vessels &amp; Urns</span>
+<span class="font-label-caps text-[11px] text-secondary">8</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container-low flex items-center justify-between cursor-pointer">
+<span class="font-body-sm text-body-sm text-on-surface">Sculptural Objects</span>
+<span class="font-label-caps text-[11px] text-secondary">5</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container-low flex items-center justify-between cursor-pointer">
+<span class="font-body-sm text-body-sm text-on-surface">Candelabras</span>
+<span class="font-label-caps text-[11px] text-secondary">3</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container-low flex items-center justify-between cursor-pointer">
+<span class="font-body-sm text-body-sm text-on-surface">Architectural Pedestals</span>
+<span class="font-label-caps text-[11px] text-secondary">2</span>
+</div>
+</div>
+</div>
+<!-- Category 3: Room Placement -->
+<div class="flex flex-col gap-2.5">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-primary font-semibold">Room Placement</span>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container rounded font-body-sm text-body-sm text-on-surface cursor-pointer">Salon &amp; Living Alcove</span>
+<span class="px-3 py-1 bg-surface-container rounded font-body-sm text-body-sm text-on-surface cursor-pointer">Formal Dining Center</span>
+<span class="px-3 py-1 bg-surface-container rounded font-body-sm text-body-sm text-on-surface cursor-pointer">Private Study Console</span>
+<span class="px-3 py-1 bg-surface-container rounded font-body-sm text-body-sm text-on-surface cursor-pointer">Patio &amp; Loggia</span>
+</div>
+</div>
+<!-- Price Range Range Slider Representation -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-primary font-semibold">Investment Tier</span>
+<span class="font-label-price text-label-price text-on-surface">180 – 450 TND</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full relative my-2">
+<div class="absolute inset-y-0 left-1/6 right-1/4 bg-primary rounded-full"></div>
+<div class="w-4 h-4 rounded-full bg-primary absolute top-1/2 -translate-y-1/2 left-1/6 -ml-2 shadow-md"></div>
+<div class="w-4 h-4 rounded-full bg-primary absolute top-1/2 -translate-y-1/2 right-1/4 -mr-2 shadow-md"></div>
+</div>
+</div>
+</div>
+<!-- Sticky Drawer Footer Controls -->
+<div class="p-margin bg-surface-container-low flex items-center gap-3 shrink-0">
+<button class="min-h-[48px] px-4 font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant hover:text-on-surface" onclick="closeFilterDrawer()" type="button">
+        Reset
+      </button>
+<button class="flex-1 min-h-[48px] bg-inverse-surface hover:bg-primary transition-colors text-inverse-on-surface rounded font-label-caps text-label-caps uppercase tracking-widest flex items-center justify-center gap-2 shadow-md" onclick="closeFilterDrawer()" type="button">
+<span>Apply Filters</span>
+<span class="bg-surface-container-highest/20 px-2 py-0.5 rounded text-[11px] font-bold text-inverse-on-surface">18</span>
+</button>
+</div>
+</div>
+<!-- Client-side Interactive Script -->
+<script>
+    function closeFilterDrawer() {
+      const drawer = document.getElementById('filter-drawer');
+      const backdrop = document.getElementById('filter-backdrop');
+      if (drawer && backdrop) {
+        drawer.classList.add('translate-y-full');
+        backdrop.classList.add('opacity-0', 'pointer-events-none');
+      }
+    }
+
+    function toggleSortMenu() {
+      const menu = document.getElementById('sort-menu');
+      if (menu) {
+        menu.classList.toggle('hidden');
+      }
+    }
+
+    function selectSort(label) {
+      const trigger = document.getElementById('sort-trigger-btn');
+      if (trigger) {
+        const span = trigger.querySelector('strong');
+        if (span) span.innerText = label;
+      }
+      toggleSortMenu();
+    }
+
+    function toggleHeart(btn) {
+      const icon = btn.querySelector('.material-symbols-outlined');
+      if (icon) {
+        const isFilled = icon.style.fontVariationSettings.includes("'FILL' 1");
+        if (isFilled) {
+          icon.style.fontVariationSettings = "'FILL' 0";
+          icon.classList.remove('text-primary');
+        } else {
+          icon.style.fontVariationSettings = "'FILL' 1";
+          icon.classList.add('text-primary');
+          showToast('Added to Saved Pieces');
+        }
+      }
+    }
+
+    function quickAddNotify(btn, title) {
+      const originalText = btn.innerText;
+      btn.innerText = 'Added to Cart';
+      btn.classList.add('bg-primary');
+      showToast(`Added: ${title}`);
+      setTimeout(() => {
+        btn.innerText = originalText;
+        btn.classList.remove('bg-primary');
+      }, 1600);
+    }
+
+    function showToast(message) {
+      const toast = document.getElementById('quick-toast');
+      const text = document.getElementById('toast-text');
+      if (toast && text) {
+        text.innerText = message;
+        toast.classList.remove('opacity-0', 'translate-y-3');
+        toast.classList.add('opacity-100', 'translate-y-0');
+        setTimeout(() => {
+          toast.classList.remove('opacity-100', 'translate-y-0');
+          toast.classList.add('opacity-0', 'translate-y-3');
+        }, 2200);
+      }
+    }
+
+    function handleLoadMore(btn) {
+      btn.innerText = 'All Works Curated';
+      btn.disabled = true;
+      btn.classList.add('opacity-50');
+      showToast('18 of 18 atelier works loaded');
+    }
+  </script>
+</div><footer class="bg-surface-container-low px-margin pt-space-xl pb-24 mt-space-2xl"><div class="flex flex-col gap-space-sm"><details class="group"><summary class="min-h-[44px] flex items-center justify-between cursor-pointer list-none py-space-sm font-label-caps text-label-caps text-on-surface uppercase tracking-wider"><span>Collections</span><span class="material-symbols-outlined text-[20px] transition-transform duration-200 group-open:rotate-180 text-secondary">expand_more</span></summary><div class="flex flex-col gap-space-xs pb-space-sm pt-space-xs"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary py-1" data-path="curated-collections" href="#">Earthen Vessels &amp; Pottery</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary py-1" data-path="curated-collections" href="#">Architectural Lighting</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary py-1" data-path="curated-collections" href="#">Linen &amp; Textile Art</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary py-1" data-path="curated-collections" href="#">Sculptural Furniture</a></div></details><details class="group"><summary class="min-h-[44px] flex items-center justify-between cursor-pointer list-none py-space-sm font-label-caps text-label-caps text-on-surface uppercase tracking-wider"><span>Bespoke Services</span><span class="material-symbols-outlined text-[20px] transition-transform duration-200 group-open:rotate-180 text-secondary">expand_more</span></summary><div class="flex flex-col gap-space-xs pb-space-sm pt-space-xs"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary py-1" data-path="showroom-appointments" href="#">Private Architectural Consultation</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary py-1" data-path="showroom-appointments" href="#">Custom Ceramic Commission</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary py-1" data-path="showroom-appointments" href="#">White-Glove Delivery Protocol</a></div></details><details class="group"><summary class="min-h-[44px] flex items-center justify-between cursor-pointer list-none py-space-sm font-label-caps text-label-caps text-on-surface uppercase tracking-wider"><span>Client Care</span><span class="material-symbols-outlined text-[20px] transition-transform duration-200 group-open:rotate-180 text-secondary">expand_more</span></summary><div class="flex flex-col gap-space-xs pb-space-sm pt-space-xs"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary py-1" data-path="care-logistics" href="#">Tunisia Logistics &amp; Delivery</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary py-1" data-path="care-logistics" href="#">Certificate of Authenticity</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary py-1" data-path="care-logistics" href="#">Material Maintenance Guide</a></div></details></div><div class="pt-space-lg text-center"><p class="font-headline-sm text-headline-sm tracking-[0.2em] uppercase text-on-surface mb-2">ELBOX</p><p class="font-label-caps text-label-caps text-outline uppercase tracking-widest">© 2025 ELBOX ARCHITECTURAL ATELIER • TUNIS</p></div></footer></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(41,40,33,0.04)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-margin"><a class="flex flex-col items-center justify-center gap-1 w-16 h-12 text-on-surface-variant transition-colors" data-path="curated-home" href="#"><span class="material-symbols-outlined text-[22px]">villa</span><span class="font-label-nav text-[10px] uppercase tracking-wider">Home</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-1 w-16 h-12 transition-colors text-primary font-semibold" data-path="shop-catalog" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-nav text-[10px] uppercase tracking-wider">Catalog</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-12 text-on-surface-variant transition-colors" data-path="curated-sets" href="#"><span class="material-symbols-outlined text-[22px]">auto_awesome_motion</span><span class="font-label-nav text-[10px] uppercase tracking-wider">Sets</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-12 text-on-surface-variant transition-colors" data-path="styling-journal" href="#"><span class="material-symbols-outlined text-[22px]">auto_stories</span><span class="font-label-nav text-[10px] uppercase tracking-wider">Journal</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-12 text-on-surface-variant transition-colors" data-path="showroom-appointments" href="#"><span class="material-symbols-outlined text-[22px]">calendar_today</span><span class="font-label-nav text-[10px] uppercase tracking-wider">Atelier</span></a></div></nav></body></html>

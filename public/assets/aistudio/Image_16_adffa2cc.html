@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;min-height:100%;margin:0;padding:0;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'inverse-primary': '#edbd95', 'surface-container-highest': '#e6e2da', 'on-primary': '#ffffff', 'primary-fixed-dim': '#edbd95', 'on-surface': '#1c1c17', 'surface-container-lowest': '#ffffff', 'secondary-fixed-dim': '#cac6bc', 'surface-container': '#f1ede5', 'inverse-surface': '#31302b', 'outline-variant': '#d4c3b8', 'tertiary-container': '#81735c', 'on-secondary-fixed-variant': '#48473f', 'tertiary-fixed': '#f3e0c5', 'tertiary-fixed-dim': '#d6c4aa', 'on-error-container': '#93000a', 'outline': '#82756b', 'on-tertiary': '#ffffff', 'on-tertiary-fixed': '#231a09', 'on-tertiary-container': '#fffbff', 'surface-tint': '#7b5736', 'surface-dim': '#dddad2', 'primary-container': '#946c4a', 'on-primary-fixed-variant': '#613f21', 'on-background': '#1c1c17', 'error-container': '#ffdad6', 'primary-fixed': '#ffdcc1', 'on-primary-container': '#fffbff', 'background': '#fdf9f1', 'primary': '#795434', 'surface-container-high': '#ece8e0', 'secondary': '#605e56', 'secondary-container': '#e6e2d7', 'on-secondary-fixed': '#1d1c15', 'on-secondary-container': '#66645c', 'on-secondary': '#ffffff', 'surface-container-low': '#f7f3eb', 'surface-bright': '#fdf9f1', 'on-tertiary-fixed-variant': '#514531', 'error': '#ba1a1a', 'inverse-on-surface': '#f4f0e8', 'secondary-fixed': '#e6e2d7', 'surface-variant': '#e6e2da', 'on-primary-fixed': '#2e1500', 'on-surface-variant': '#50453c', 'on-error': '#ffffff', 'tertiary': '#675a45', 'surface': '#fdf9f1' }, borderRadius: { 'DEFAULT': '0.125rem', 'lg': '0.25rem', 'xl': '0.5rem', 'full': '0.75rem' }, spacing: { 'space-lg': '1.75rem', 'margin': '1.25rem', 'margin-tablet': '2.5rem', 'gutter-desktop': '2.5rem', 'space-sm': '0.5rem', 'margin-desktop': '4.5rem', 'space-2xl': '5rem', 'gutter': '1.5rem', 'space-xl': '3rem', 'space-xs': '0.25rem', 'space-md': '1rem' }, fontFamily: { 'headline-lg': ['Playfair Display'], 'label-nav': ['Plus Jakarta Sans'], 'headline-md': ['Playfair Display'], 'body-sm': ['Plus Jakarta Sans'], 'body-md': ['Plus Jakarta Sans'], 'display-hero-mobile': ['Playfair Display'], 'label-caps': ['Plus Jakarta Sans'], 'body-lg': ['Plus Jakarta Sans'], 'title-editorial': ['Playfair Display'], 'headline-sm': ['Playfair Display'], 'headline-lg-mobile': ['Playfair Display'], 'display-hero': ['Playfair Display'], 'label-price': ['Plus Jakarta Sans'] }, fontSize: { 'headline-lg': ['40px', { lineHeight: '48px', letterSpacing: '-0.01em', fontWeight: '400' }], 'label-nav': ['12px', { lineHeight: '16px', letterSpacing: '0.10em', fontWeight: '500' }], 'headline-md': ['28px', { lineHeight: '36px', letterSpacing: '0em', fontWeight: '500' }], 'body-sm': ['13px', { lineHeight: '20px', letterSpacing: '0.02em', fontWeight: '400' }], 'body-md': ['15px', { lineHeight: '24px', letterSpacing: '0.01em', fontWeight: '400' }], 'display-hero-mobile': ['36px', { lineHeight: '44px', letterSpacing: '-0.01em', fontWeight: '400' }], 'label-caps': ['11px', { lineHeight: '16px', letterSpacing: '0.14em', fontWeight: '600' }], 'body-lg': ['18px', { lineHeight: '28px', letterSpacing: '0.01em', fontWeight: '400' }], 'title-editorial': ['18px', { lineHeight: '26px', letterSpacing: '0.02em', fontWeight: '600' }], 'headline-sm': ['22px', { lineHeight: '30px', letterSpacing: '0.01em', fontWeight: '500' }], 'headline-lg-mobile': ['28px', { lineHeight: '36px', letterSpacing: '0em', fontWeight: '400' }], 'display-hero': ['56px', { lineHeight: '64px', letterSpacing: '-0.02em', fontWeight: '400' }], 'label-price': ['16px', { lineHeight: '22px', letterSpacing: '0.04em', fontWeight: '600' }] } } } };</script></head><body class="bg-background font-body-md text-on-surface min-h-screen flex flex-col selection:bg-surface-variant"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Return to previous screen" class="min-w-[44px] min-h-[44px] flex items-center justify-center text-on-surface hover:text-primary transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-title-editorial text-title-editorial text-on-surface tracking-wide line-clamp-1">Shopping Bag</h1></div><div class="flex items-center gap-space-xs"><a aria-label="Shopping Bag" class="min-w-[44px] min-h-[44px] relative flex items-center justify-center text-on-surface hover:text-primary transition-colors" data-path="shopping-bag" href="#"><span class="material-symbols-outlined text-[24px]">local_mall</span><span class="absolute top-2 right-2 bg-primary text-on-primary font-label-caps text-[10px] w-4 h-4 rounded-full flex items-center justify-center">2</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-background"><div class="flex flex-col w-full pb-10">
+<!-- Atelier Status & Sub-Header Announcement -->
+<section class="px-margin pt-space-md pb-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-caps text-label-caps tracking-widest uppercase">Cart Status</span>
+</div>
+<span class="font-label-caps text-label-caps text-tertiary">Holding 18:42</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Curated Bag</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">2 Master Editions Reserved under your session token</p>
+</div>
+</section>
+<!-- Free White-Glove Logistics Progress Tracker -->
+<section class="px-margin py-space-sm">
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span class="font-label-caps text-label-caps text-primary tracking-wider uppercase">Logistics Tier Unlocked</span>
+</div>
+<span class="font-label-price text-label-price text-on-surface">550 <span class="font-body-sm text-body-sm text-on-surface-variant font-normal">/ 400 TND</span></span>
+</div>
+<!-- Atmospheric Progress Meter -->
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden my-1">
+<div class="h-full bg-primary rounded-full transition-all duration-700" style="width: 100%;"></div>
+</div>
+<div class="flex items-start gap-2 pt-0.5">
+<span class="material-symbols-outlined text-tertiary text-[16px] shrink-0 mt-0.5">inventory_2</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+          Eligible for complimentary bespoke wooden crating &amp; insured courier across Tunisia.
+        </p>
+</div>
+</div>
+</section>
+<!-- Reserved Objects List -->
+<section class="px-margin pt-space-md flex flex-col gap-space-md">
+<div class="flex items-baseline justify-between">
+<span class="font-label-caps text-label-caps text-tertiary uppercase tracking-wider">Reserved Acquisitions</span>
+<span class="font-label-nav text-label-nav text-on-surface-variant">2 Artworks</span>
+</div>
+<!-- Object 1 Card -->
+<article class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-sm shadow-sm transition-all duration-300">
+<div class="flex gap-space-md">
+<!-- Thumbnail Frame (Aspect 0.80) -->
+<div class="w-24 h-[120px] rounded shrink-0 overflow-hidden bg-surface-container relative">
+<img alt="Ambre Fluted Globe &amp; Ceramic Knot studio piece" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPH91FV-Cinkmz654uLvJjRqN8p9_YZBixcXHNbqCu2pbBabYExqgvMPDI3-maO_dTYLssLzVm2uq5qkQbZPPtKqrLkCruZK99of3pZilYUAYOWSdEZKG1m1Ri9C3U5T3BE-nmUInjDYM0PIuKq96kF2cSWGmtPVqBtkspzp7mzFLI1xQW8vpiF6m4j_0ia6puCOABbBC4uBVfZau6IH0HCSoLmHHdzP2Poy2rTLHyETUwbsTwUJw_j-5MMJ0BwrNtFlo"/>
+<span class="absolute bottom-1 left-1 bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface px-1.5 py-0.5 rounded-[2px] font-label-caps text-[9px]">
+            No. 04
+          </span>
+</div>
+<!-- Details -->
+<div class="flex-1 min-w-0 flex flex-col justify-between">
+<div class="flex flex-col gap-0.5">
+<span class="font-label-caps text-[10px] text-primary tracking-widest uppercase">Atelier Glass &amp; Clay</span>
+<h3 class="font-title-editorial text-title-editorial text-on-surface leading-tight truncate">Ambre Fluted Globe &amp; Ceramic Knot</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px] leading-relaxed">
+              Tone: Warm Amber / Gloss Noir<br/>
+              Dim: Ø 24cm • H 28cm
+            </p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-price text-label-price text-on-surface">240 TND</span>
+<!-- Quantity Counter -->
+<div class="inline-flex items-center bg-surface-container-high rounded p-0.5">
+<button aria-label="Decrease quantity" class="w-7 h-7 flex items-center justify-center text-on-surface hover:text-primary active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="font-label-caps text-label-caps px-2 text-on-surface">1</span>
+<button aria-label="Increase quantity" class="w-7 h-7 flex items-center justify-center text-on-surface hover:text-primary active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Sub-strip -->
+<div class="flex items-center justify-between pt-2 border-none">
+<span class="font-label-caps text-[10px] text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">shield</span> Hand-inspected piece
+        </span>
+<button class="font-label-caps text-label-caps text-outline hover:text-error transition-colors flex items-center gap-1 py-1" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+          Release
+        </button>
+</div>
+</article>
+<!-- Object 2 Card -->
+<article class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-sm shadow-sm transition-all duration-300">
+<div class="flex gap-space-md">
+<!-- Thumbnail Frame (Aspect 0.80) -->
+<div class="w-24 h-[120px] rounded shrink-0 overflow-hidden bg-surface-container relative">
+<img alt="Cerulean Wave Ripple Amphora studio prototype" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBAqBKhtPl1s87jElUta2NyFN7fPFU_Un1vVmkpVcB-3NcsSBcMHuen4crCwBMxO4Gd-Tvo2F209eTdxfAMKl355Vh4KlFMcvZlMIwHtJc7VBHeMz8yY_IH1JhmKXSL5va2f63cNZKViXB8wZQb0P7wFVbotds0K9FHWYkQmNEOg4BMG6aCAua5N9HT_f-nKs1ZGxBrRYQcTQvbRWuDRTmwrtwY8KvDHZjpyrZeYK7zIjQ-GyFCI_j_0VGJPjYnTskAfY"/>
+<span class="absolute bottom-1 left-1 bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface px-1.5 py-0.5 rounded-[2px] font-label-caps text-[9px]">
+            1 of 6
+          </span>
+</div>
+<!-- Details -->
+<div class="flex-1 min-w-0 flex flex-col justify-between">
+<div class="flex flex-col gap-0.5">
+<span class="font-label-caps text-[10px] text-primary tracking-widest uppercase">Sculptural Archive</span>
+<h3 class="font-title-editorial text-title-editorial text-on-surface leading-tight truncate">Cerulean Wave Ripple Amphora</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px] leading-relaxed">
+              Finish: High-Clarity Marine Cyan<br/>
+              Edition: Studio Prototype (1 of 6)
+            </p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-price text-label-price text-on-surface">310 TND</span>
+<!-- Quantity Counter -->
+<div class="inline-flex items-center bg-surface-container-high rounded p-0.5">
+<button aria-label="Decrease quantity" class="w-7 h-7 flex items-center justify-center text-on-surface hover:text-primary active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="font-label-caps text-label-caps px-2 text-on-surface">1</span>
+<button aria-label="Increase quantity" class="w-7 h-7 flex items-center justify-center text-on-surface hover:text-primary active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Sub-strip -->
+<div class="flex items-center justify-between pt-2 border-none">
+<span class="font-label-caps text-[10px] text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">local_shipping</span> Reinforced crate
+        </span>
+<button class="font-label-caps text-label-caps text-outline hover:text-error transition-colors flex items-center gap-1 py-1" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+          Release
+        </button>
+</div>
+</article>
+</section>
+<!-- Summary Dossier Breakdown -->
+<section class="px-margin pt-space-lg flex flex-col gap-space-sm">
+<div class="bg-surface-container-high rounded-lg p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Summary Dossier</span>
+<span class="font-label-caps text-[10px] bg-surface-container text-tertiary px-2 py-0.5 rounded">Ref: TN-ELB-9402</span>
+</div>
+<div class="flex flex-col gap-2 pt-1">
+<div class="flex justify-between items-center text-body-sm">
+<span class="font-body-sm text-on-surface-variant">Pieces Subtotal (2 items)</span>
+<span class="font-body-sm font-semibold text-on-surface">550 TND</span>
+</div>
+<div class="flex justify-between items-center text-body-sm">
+<span class="font-body-sm text-on-surface-variant flex items-center gap-1">
+            White-Glove Wooden Crating
+            <span class="material-symbols-outlined text-[14px] text-tertiary" title="Hand-crafted cedar casing">help</span>
+</span>
+<span class="font-label-caps text-label-caps text-primary">COMPLIMENTARY</span>
+</div>
+<div class="flex justify-between items-center text-body-sm">
+<span class="font-body-sm text-on-surface-variant">Insured Courier (Tunisia)</span>
+<span class="font-label-caps text-label-caps text-primary">INCLUDED</span>
+</div>
+<!-- Subtle tonal divider -->
+<div class="h-px bg-outline-variant/30 my-1 w-full"></div>
+<div class="flex justify-between items-baseline pt-0.5">
+<div class="flex flex-col">
+<span class="font-title-editorial text-on-surface">Total Prototype Ref.</span>
+<span class="font-label-caps text-[10px] text-tertiary">All duties &amp; artisanal packing included</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">550 TND</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Delivery & Concierge Form -->
+<section class="px-margin pt-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col gap-0.5">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Destination &amp; Custody</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Private Courier Details</h3>
+</div>
+<form class="flex flex-col gap-space-md" onsubmit="event.preventDefault();">
+<!-- Full Name Field -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider" for="fullName">Patron Full Name</label>
+<div class="relative flex items-center">
+<input class="w-full h-12 px-space-md rounded bg-surface-container text-on-surface placeholder:text-outline/60 focus:bg-surface-container-lowest focus:outline-none transition-colors font-body-md" id="fullName" placeholder="e.g. Youssef Ben Salem" type="text" value="Selim Mansour"/>
+<span class="material-symbols-outlined text-outline absolute right-3 text-[20px] pointer-events-none">person</span>
+</div>
+</div>
+<!-- Phone (+216) Field -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider" for="phone">Mobile Concierge Contact</label>
+<div class="flex gap-2">
+<div class="h-12 px-3.5 flex items-center justify-center rounded bg-surface-container text-on-surface font-body-md shrink-0">
+            +216
+          </div>
+<div class="relative flex-1 flex items-center">
+<input class="w-full h-12 px-space-md rounded bg-surface-container text-on-surface placeholder:text-outline/60 focus:bg-surface-container-lowest focus:outline-none transition-colors font-body-md" id="phone" placeholder="98 000 000" type="tel" value="55 412 890"/>
+<span class="material-symbols-outlined text-outline absolute right-3 text-[20px] pointer-events-none">phone_iphone</span>
+</div>
+</div>
+</div>
+<!-- Governorate Select Field -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider" for="governorate">Governorate</label>
+<div class="relative flex items-center">
+<select class="w-full h-12 px-space-md rounded bg-surface-container text-on-surface focus:bg-surface-container-lowest focus:outline-none transition-colors font-body-md appearance-none" id="governorate">
+<option value="Tunis">Tunis (Carthage, La Marsa, Gammarth)</option>
+<option value="Ariana">Ariana (Ennasr, Menzah)</option>
+<option value="Ben Arous">Ben Arous (Radès, Megrine)</option>
+<option value="Sousse">Sousse (Kantaoui, Sahloul)</option>
+<option value="Monastir">Monastir</option>
+<option value="Nabeul">Nabeul (Hammamet)</option>
+<option value="Sfax">Sfax</option>
+<option value="Bizerte">Bizerte</option>
+</select>
+<span class="material-symbols-outlined text-outline absolute right-3 text-[20px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Delivery Address Field -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider" for="address">Street Address &amp; Residence</label>
+<div class="relative flex items-start">
+<textarea class="w-full p-space-md rounded bg-surface-container text-on-surface placeholder:text-outline/60 focus:bg-surface-container-lowest focus:outline-none transition-colors font-body-md resize-none" id="address" placeholder="Villa name, street, apartment or estate specifications..." rows="2">Villa Sidi Bou Saïd, Rue Habib Thameur, Apt 3B</textarea>
+</div>
+</div>
+<!-- Delivery Method Note -->
+<div class="p-space-md rounded bg-surface-container-low flex items-start gap-3 shadow-sm">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-primary text-[18px]">workspace_premium</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-editorial text-[15px] text-on-surface">White-Glove Courier &amp; Placement</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px] leading-relaxed">
+            Includes in-home plinth uncrating, surface positioning, and debris removal by certified art handlers.
+          </p>
+</div>
+</div>
+<!-- Payment Method Toggle -->
+<div class="flex flex-col gap-2 pt-1">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Payment Protocol</label>
+<div class="grid grid-cols-1 gap-2.5">
+<!-- Option 1: Cash on White-Glove Delivery -->
+<label class="relative flex items-center justify-between p-space-md rounded bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors shadow-sm">
+<div class="flex items-center gap-3">
+<input checked="" class="w-4 h-4 accent-primary" name="paymentMethod" type="radio" value="cod"/>
+<div class="flex flex-col">
+<span class="font-body-md font-semibold text-on-surface">Cash on White-Glove Delivery</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Verify crating &amp; certificates before settling</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px]">payments</span>
+</label>
+<!-- Option 2: Bank Wire / Atelier Invoice -->
+<label class="relative flex items-center justify-between p-space-md rounded bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors shadow-sm">
+<div class="flex items-center gap-3">
+<input class="w-4 h-4 accent-primary" name="paymentMethod" type="radio" value="wire"/>
+<div class="flex flex-col">
+<span class="font-body-md font-semibold text-on-surface">Bank Wire / Atelier Invoice</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Instant RIB &amp; formal gallery receipt dispatch</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">account_balance</span>
+</label>
+</div>
+</div>
+<!-- Primary Action CTA -->
+<div class="pt-space-sm flex flex-col gap-space-sm">
+<button class="w-full h-14 bg-on-surface text-background hover:bg-primary active:scale-[0.99] transition-all rounded font-label-nav text-label-nav uppercase tracking-widest flex items-center justify-center gap-2 shadow-md" id="confirmOrderBtn" type="button">
+<span>Confirm Bespoke Order Allocation</span>
+<span class="opacity-75">•</span>
+<span>550 TND</span>
+</button>
+<p class="font-body-sm text-[11px] text-center text-tertiary">
+          Secured with 256-bit atelier ledger encryption. No hidden administrative fees.
+        </p>
+</div>
+</form>
+</section>
+<!-- Guarantees & Authenticity Seals -->
+<section class="px-margin pt-space-lg">
+<div class="bg-surface-container-high/60 rounded-lg p-space-md flex flex-col gap-space-md">
+<div class="flex items-start gap-3">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[16px]">draw</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-title-editorial text-[14px] text-on-surface">Archival Certificate of Authenticity</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px] leading-relaxed">
+            Every edition arrives with an embossed, hand-signed pergament verifying prototype lineage and ceramic batch integrity.
+          </p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-title-editorial text-[14px] text-on-surface">48-Hour Inspection Guarantee</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px] leading-relaxed">
+            Examine the mineral patina in your living space. If alignment is imperfect, our concierge arranges immediate recall crating.
+          </p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  (function() {
+    const confirmBtn = document.getElementById('confirmOrderBtn');
+    if (confirmBtn) {
+      confirmBtn.addEventListener('click', function() {
+        const originalText = confirmBtn.innerHTML;
+        confirmBtn.disabled = true;
+        confirmBtn.innerHTML = `
+          <span class="inline-block animate-spin mr-2">
+            <span class="material-symbols-outlined text-[18px]">progress_activity</span>
+          </span>
+          <span>Securing Allocation...</span>
+        `;
+        
+        setTimeout(() => {
+          confirmBtn.classList.remove('bg-on-surface');
+          confirmBtn.classList.add('bg-primary');
+          confirmBtn.innerHTML = `
+            <span class="material-symbols-outlined text-[20px] mr-1">check_circle</span>
+            <span>Allocated • Ref #TN-9402</span>
+          `;
+        }, 1200);
+      });
+    }
+  })();
+</script></main></body></html>

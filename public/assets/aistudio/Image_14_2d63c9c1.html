@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;min-height:100%;margin:0;padding:0;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'inverse-primary': '#edbd95', 'surface-container-highest': '#e6e2da', 'on-primary': '#ffffff', 'primary-fixed-dim': '#edbd95', 'on-surface': '#1c1c17', 'surface-container-lowest': '#ffffff', 'secondary-fixed-dim': '#cac6bc', 'surface-container': '#f1ede5', 'inverse-surface': '#31302b', 'outline-variant': '#d4c3b8', 'tertiary-container': '#81735c', 'on-secondary-fixed-variant': '#48473f', 'tertiary-fixed': '#f3e0c5', 'tertiary-fixed-dim': '#d6c4aa', 'on-error-container': '#93000a', 'outline': '#82756b', 'on-tertiary': '#ffffff', 'on-tertiary-fixed': '#231a09', 'on-tertiary-container': '#fffbff', 'surface-tint': '#7b5736', 'surface-dim': '#dddad2', 'primary-container': '#946c4a', 'on-primary-fixed-variant': '#613f21', 'on-background': '#1c1c17', 'error-container': '#ffdad6', 'primary-fixed': '#ffdcc1', 'on-primary-container': '#fffbff', 'background': '#fdf9f1', 'primary': '#795434', 'surface-container-high': '#ece8e0', 'secondary': '#605e56', 'secondary-container': '#e6e2d7', 'on-secondary-fixed': '#1d1c15', 'on-secondary-container': '#66645c', 'on-secondary': '#ffffff', 'surface-container-low': '#f7f3eb', 'surface-bright': '#fdf9f1', 'on-tertiary-fixed-variant': '#514531', 'error': '#ba1a1a', 'inverse-on-surface': '#f4f0e8', 'secondary-fixed': '#e6e2d7', 'surface-variant': '#e6e2da', 'on-primary-fixed': '#2e1500', 'on-surface-variant': '#50453c', 'on-error': '#ffffff', 'tertiary': '#675a45', 'surface': '#fdf9f1' }, borderRadius: { 'DEFAULT': '0.125rem', 'lg': '0.25rem', 'xl': '0.5rem', 'full': '0.75rem' }, spacing: { 'space-lg': '1.75rem', 'margin': '1.25rem', 'margin-tablet': '2.5rem', 'gutter-desktop': '2.5rem', 'space-sm': '0.5rem', 'margin-desktop': '4.5rem', 'space-2xl': '5rem', 'gutter': '1.5rem', 'space-xl': '3rem', 'space-xs': '0.25rem', 'space-md': '1rem' }, fontFamily: { 'headline-lg': ['Playfair Display'], 'label-nav': ['Plus Jakarta Sans'], 'headline-md': ['Playfair Display'], 'body-sm': ['Plus Jakarta Sans'], 'body-md': ['Plus Jakarta Sans'], 'display-hero-mobile': ['Playfair Display'], 'label-caps': ['Plus Jakarta Sans'], 'body-lg': ['Plus Jakarta Sans'], 'title-editorial': ['Playfair Display'], 'headline-sm': ['Playfair Display'], 'headline-lg-mobile': ['Playfair Display'], 'display-hero': ['Playfair Display'], 'label-price': ['Plus Jakarta Sans'] }, fontSize: { 'headline-lg': ['40px', { lineHeight: '48px', letterSpacing: '-0.01em', fontWeight: '400' }], 'label-nav': ['12px', { lineHeight: '16px', letterSpacing: '0.10em', fontWeight: '500' }], 'headline-md': ['28px', { lineHeight: '36px', letterSpacing: '0em', fontWeight: '500' }], 'body-sm': ['13px', { lineHeight: '20px', letterSpacing: '0.02em', fontWeight: '400' }], 'body-md': ['15px', { lineHeight: '24px', letterSpacing: '0.01em', fontWeight: '400' }], 'display-hero-mobile': ['36px', { lineHeight: '44px', letterSpacing: '-0.01em', fontWeight: '400' }], 'label-caps': ['11px', { lineHeight: '16px', letterSpacing: '0.14em', fontWeight: '600' }], 'body-lg': ['18px', { lineHeight: '28px', letterSpacing: '0.01em', fontWeight: '400' }], 'title-editorial': ['18px', { lineHeight: '26px', letterSpacing: '0.02em', fontWeight: '600' }], 'headline-sm': ['22px', { lineHeight: '30px', letterSpacing: '0.01em', fontWeight: '500' }], 'headline-lg-mobile': ['28px', { lineHeight: '36px', letterSpacing: '0em', fontWeight: '400' }], 'display-hero': ['56px', { lineHeight: '64px', letterSpacing: '-0.02em', fontWeight: '400' }], 'label-price': ['16px', { lineHeight: '22px', letterSpacing: '0.04em', fontWeight: '600' }] } } } };</script></head><body class="bg-background font-body-md text-on-surface min-h-screen flex flex-col selection:bg-surface-variant"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Return to previous screen" class="min-w-[44px] min-h-[44px] flex items-center justify-center text-on-surface hover:text-primary transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-title-editorial text-title-editorial text-on-surface tracking-wide line-clamp-1">Product Detail</h1></div><div class="flex items-center gap-space-xs"><a aria-label="Shopping Bag" class="min-w-[44px] min-h-[44px] relative flex items-center justify-center text-on-surface hover:text-primary transition-colors" data-path="shopping-bag" href="#"><span class="material-symbols-outlined text-[24px]">local_mall</span><span class="absolute top-2 right-2 bg-primary text-on-primary font-label-caps text-[10px] w-4 h-4 rounded-full flex items-center justify-center">2</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-background"><div class="flex flex-col w-full pb-24">
+<!-- Editorial Breadcrumb Track -->
+<div class="px-margin pt-4 pb-2">
+<nav aria-label="Breadcrumb" class="flex items-center gap-1.5 overflow-x-auto whitespace-nowrap scrollbar-none py-1">
+<span class="font-label-caps text-label-caps text-on-surface-variant/80 tracking-widest uppercase">Shop</span>
+<span class="font-label-caps text-label-caps text-outline-variant">/</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant/80 tracking-widest uppercase">Vases &amp; Sculptural Glass</span>
+<span class="font-label-caps text-label-caps text-outline-variant">/</span>
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase font-semibold">REF-ELB-0104</span>
+</nav>
+</div>
+<!-- Mobile Gallery Section with Provenance & Zoom Badges -->
+<section class="relative px-margin mt-1">
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-surface-container shadow-md group">
+<!-- Main Swiper Container -->
+<div class="flex w-full h-full overflow-x-auto snap-x snap-mandatory scrollbar-none" id="gallery-scroller">
+<div class="w-full h-full flex-shrink-0 snap-center relative">
+<img alt="No. 01 — Ambre Fluted Globe &amp; Ceramic Knot Ensemble" class="w-full h-full object-cover select-none" id="main-view-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPH91FV-Cinkmz654uLvJjRqN8p9_YZBixcXHNbqCu2pbBabYExqgvMPDI3-maO_dTYLssLzVm2uq5qkQbZPPtKqrLkCruZK99of3pZilYUAYOWSdEZKG1m1Ri9C3U5T3BE-nmUInjDYM0PIuKq96kF2cSWGmtPVqBtkspzp7mzFLI1xQW8vpiF6m4j_0ia6puCOABbBC4uBVfZau6IH0HCSoLmHHdzP2Poy2rTLHyETUwbsTwUJw_j-5MMJ0BwrNtFlo"/>
+</div>
+</div>
+<!-- Provenance Pill (Top Left) -->
+<div class="absolute top-3 left-3 flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest/85 backdrop-blur-md shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-caps text-[10px] tracking-wider text-on-surface uppercase">Hand-Inspected • La Marsa Atelier</span>
+</div>
+<!-- Pinch-to-zoom badge (Top Right) -->
+<button aria-label="Pinch to zoom view" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/85 backdrop-blur-md text-on-surface flex items-center justify-center shadow-sm active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">zoom_in</span>
+</button>
+<!-- Minimal Dots Indicator (Bottom Center) -->
+<div class="absolute bottom-3 inset-x-0 flex items-center justify-center gap-1.5 pointer-events-none">
+<span class="gallery-dot w-5 h-1 rounded-full bg-primary transition-all duration-300"></span>
+<span class="gallery-dot w-1.5 h-1 rounded-full bg-surface-container-highest/80 transition-all duration-300"></span>
+<span class="gallery-dot w-1.5 h-1 rounded-full bg-surface-container-highest/80 transition-all duration-300"></span>
+<span class="gallery-dot w-1.5 h-1 rounded-full bg-surface-container-highest/80 transition-all duration-300"></span>
+</div>
+</div>
+<!-- Thumbnail Strip -->
+<div class="grid grid-cols-4 gap-2.5 mt-3">
+<button class="thumb-btn relative aspect-square rounded-lg overflow-hidden bg-surface-container shadow-sm p-0.5 transition-all outline-none" onclick="changeImage('https://lh3.googleusercontent.com/aida-public/AB6AXuCPH91FV-Cinkmz654uLvJjRqN8p9_YZBixcXHNbqCu2pbBabYExqgvMPDI3-maO_dTYLssLzVm2uq5qkQbZPPtKqrLkCruZK99of3pZilYUAYOWSdEZKG1m1Ri9C3U5T3BE-nmUInjDYM0PIuKq96kF2cSWGmtPVqBtkspzp7mzFLI1xQW8vpiF6m4j_0ia6puCOABbBC4uBVfZau6IH0HCSoLmHHdzP2Poy2rTLHyETUwbsTwUJw_j-5MMJ0BwrNtFlo', 0)" style="box-shadow: 0 0 0 1.5px #795434;" type="button">
+<img alt="Ensemble primary view" class="w-full h-full object-cover rounded-DEFAULT" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPH91FV-Cinkmz654uLvJjRqN8p9_YZBixcXHNbqCu2pbBabYExqgvMPDI3-maO_dTYLssLzVm2uq5qkQbZPPtKqrLkCruZK99of3pZilYUAYOWSdEZKG1m1Ri9C3U5T3BE-nmUInjDYM0PIuKq96kF2cSWGmtPVqBtkspzp7mzFLI1xQW8vpiF6m4j_0ia6puCOABbBC4uBVfZau6IH0HCSoLmHHdzP2Poy2rTLHyETUwbsTwUJw_j-5MMJ0BwrNtFlo"/>
+</button>
+<button class="thumb-btn relative aspect-square rounded-lg overflow-hidden bg-surface-container shadow-sm p-0.5 opacity-65 hover:opacity-100 transition-all outline-none" onclick="changeImage('https://lh3.googleusercontent.com/aida-public/AB6AXuDYy7pt4-2e6voWD5qSKpYWbVLQcKRnYuSr4ZqTgWyATVmeEVfWslmgm2FZeMIQ9lsWdKJ4ZqEHDvGkrRIb_A73JMwVK9HJNBCX2tRRZiJD6gNI7Ie_abxT73u5JRLVfZy1PRwZ7mboQuCOV4svQFto_UjtrVeluvWjeMC9IUg9L-mGXWkhgE2X4ygEYVnad9bf_5wMuKzi_6XAimFN8WBQZJOH5Azz_GMFmWxiay-Z8Lhu19gj9_rR1v9YfTnWWuA9agY', 1)" type="button">
+<img alt="Ceramic ribbon detail" class="w-full h-full object-cover rounded-DEFAULT" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYy7pt4-2e6voWD5qSKpYWbVLQcKRnYuSr4ZqTgWyATVmeEVfWslmgm2FZeMIQ9lsWdKJ4ZqEHDvGkrRIb_A73JMwVK9HJNBCX2tRRZiJD6gNI7Ie_abxT73u5JRLVfZy1PRwZ7mboQuCOV4svQFto_UjtrVeluvWjeMC9IUg9L-mGXWkhgE2X4ygEYVnad9bf_5wMuKzi_6XAimFN8WBQZJOH5Azz_GMFmWxiay-Z8Lhu19gj9_rR1v9YfTnWWuA9agY"/>
+</button>
+<button class="thumb-btn relative aspect-square rounded-lg overflow-hidden bg-surface-container shadow-sm p-0.5 opacity-65 hover:opacity-100 transition-all outline-none" onclick="changeImage('https://lh3.googleusercontent.com/aida-public/AB6AXuDgR9L30cd7wp13q4h-9lbREhW9UUGM3BsGsBLKVz9O98rwllp41xl3X3qXqSLiU9tDtuxI5KZNCngWMcMtFb0swJNcN1T5QYFmWZoN8o23xGRtnDgEcdiyUApvKz7nLLHkeKLdexpiisimtGUI5wbPxTLVcoevjPSFQ737B6DD1m2aZmbz-Romz9gAz8_moP-IJ965LqaHVqUt9wOFoWQSi3U1U_0rbm5XCdFSOw2E1kAj78Ecta0xJPchWZmqg3FqzxY', 2)" type="button">
+<img alt="Fluted amber light refraction" class="w-full h-full object-cover rounded-DEFAULT" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgR9L30cd7wp13q4h-9lbREhW9UUGM3BsGsBLKVz9O98rwllp41xl3X3qXqSLiU9tDtuxI5KZNCngWMcMtFb0swJNcN1T5QYFmWZoN8o23xGRtnDgEcdiyUApvKz7nLLHkeKLdexpiisimtGUI5wbPxTLVcoevjPSFQ737B6DD1m2aZmbz-Romz9gAz8_moP-IJ965LqaHVqUt9wOFoWQSi3U1U_0rbm5XCdFSOw2E1kAj78Ecta0xJPchWZmqg3FqzxY"/>
+</button>
+<button class="thumb-btn relative aspect-square rounded-lg overflow-hidden bg-surface-container shadow-sm p-0.5 opacity-65 hover:opacity-100 transition-all outline-none" onclick="changeImage('https://lh3.googleusercontent.com/aida-public/AB6AXuCyi490mpBfmaCdxEo-3u1cqT0ejnJ1KS-bsZmczdgZiOIadJlO2zH453sLhG_VGA7E9oSBfQSQXUBV2L7UugxkfUpK2QTtcJYscom8hdqxH7PMwg-oi6YwY1OUXT9okwiyCAKgUtyuNA4hqb9iqWjZKvUzXE9eVF5LQrs_sypp5dH-uWs_oCXdvblGlOJELxhCkFj2jMtqFlD0qhcv80_RH51FryHx3L5WT1MRLoP-0QeGI1yGYqAJlDtzRhHOzCu40cw', 3)" type="button">
+<img alt="Architectural vignette staging" class="w-full h-full object-cover rounded-DEFAULT" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyi490mpBfmaCdxEo-3u1cqT0ejnJ1KS-bsZmczdgZiOIadJlO2zH453sLhG_VGA7E9oSBfQSQXUBV2L7UugxkfUpK2QTtcJYscom8hdqxH7PMwg-oi6YwY1OUXT9okwiyCAKgUtyuNA4hqb9iqWjZKvUzXE9eVF5LQrs_sypp5dH-uWs_oCXdvblGlOJELxhCkFj2jMtqFlD0qhcv80_RH51FryHx3L5WT1MRLoP-0QeGI1yGYqAJlDtzRhHOzCu40cw"/>
+</button>
+</div>
+</section>
+<!-- Title & Price Dossier -->
+<section class="px-margin mt-5 space-y-3">
+<!-- Limited Edition Badge -->
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-secondary-container text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[13px] text-primary" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span class="font-label-caps text-label-caps tracking-widest uppercase">Limited 2025 Edition • Single Vignette Available</span>
+</div>
+<!-- Editorial Title -->
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-headline-lg tracking-tight leading-tight">
+      No. 01 — Ambre Fluted Globe &amp; Ceramic Knot Ensemble
+    </h2>
+<!-- Price Point with Status Indicator -->
+<div class="flex items-baseline justify-between pt-1">
+<div>
+<p class="font-label-price text-label-price text-primary">Prototype Ref. 240 TND</p>
+<span class="font-body-sm text-[12px] text-on-surface-variant tracking-normal">VAT Inclusive • Direct Atelier Provenance</span>
+</div>
+<span class="inline-flex items-center gap-1 text-[11px] font-label-caps uppercase text-secondary font-medium px-2 py-0.5 bg-surface-container-high rounded">
+        In Stock
+      </span>
+</div>
+</section>
+<!-- Tactile Architecture Note (Niche Callout) -->
+<section class="px-margin mt-5">
+<div class="p-3.5 rounded-xl bg-surface-container-low text-on-surface shadow-sm relative overflow-hidden">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5 flex-shrink-0">architecture</span>
+<div class="space-y-1">
+<p class="font-label-caps text-[10px] tracking-wider text-primary uppercase">Tactile Architecture</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic leading-relaxed">
+            “Mouth-blown fluted amber glass with hand-glazed noir ceramic ribbon knot. Designed to command ambient afternoon light.”
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Material & Finish Palette Selection -->
+<section class="px-margin mt-6">
+<div class="flex items-center justify-between mb-2.5">
+<h3 class="font-label-caps text-label-caps text-on-surface-variant tracking-widest uppercase">Finish &amp; Glaze Variant</h3>
+<span class="font-label-caps text-[10px] text-primary tracking-wider uppercase font-semibold" id="variant-label">Amber Fluted &amp; Noir</span>
+</div>
+<div class="grid grid-cols-1 gap-2">
+<!-- Option 1: Selected -->
+<button class="variant-card w-full flex items-center justify-between p-3 rounded-lg bg-surface-container text-on-surface transition-all text-left shadow-sm" onclick="selectVariant(this, 'Amber Fluted &amp; Noir Knot')" style="box-shadow: 0 0 0 1.5px #795434;" type="button">
+<div class="flex items-center gap-3">
+<div class="flex -space-x-1.5 items-center">
+<span class="w-5 h-5 rounded-full bg-primary-container shadow-inner"></span>
+<span class="w-5 h-5 rounded-full bg-inverse-surface shadow-inner"></span>
+</div>
+<div>
+<p class="font-body-md text-body-md text-on-surface font-medium leading-none">Amber Fluted &amp; Noir Knot</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">Original Sculptural Pairing • Atelier Archive</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</button>
+<!-- Option 2 -->
+<button class="variant-card w-full flex items-center justify-between p-3 rounded-lg bg-surface-container-low text-on-surface opacity-85 transition-all text-left shadow-sm" onclick="selectVariant(this, 'Cerulean &amp; Bone Knot')" type="button">
+<div class="flex items-center gap-3">
+<div class="flex -space-x-1.5 items-center">
+<span class="w-5 h-5 rounded-full bg-tertiary shadow-inner"></span>
+<span class="w-5 h-5 rounded-full bg-surface-container-highest shadow-inner"></span>
+</div>
+<div>
+<p class="font-body-md text-body-md text-on-surface font-medium leading-none">Cerulean &amp; Bone Knot</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">Glazed porcelain ribbon with cerulean vessel</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[20px]">radio_button_unchecked</span>
+</button>
+<!-- Option 3 -->
+<button class="variant-card w-full flex items-center justify-between p-3 rounded-lg bg-surface-container-low text-on-surface opacity-85 transition-all text-left shadow-sm" onclick="selectVariant(this, 'Smoked Olive &amp; Gold Knot')" type="button">
+<div class="flex items-center gap-3">
+<div class="flex -space-x-1.5 items-center">
+<span class="w-5 h-5 rounded-full bg-secondary shadow-inner"></span>
+<span class="w-5 h-5 rounded-full bg-tertiary-fixed-dim shadow-inner"></span>
+</div>
+<div>
+<p class="font-body-md text-body-md text-on-surface font-medium leading-none">Smoked Olive &amp; Gold Knot</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">Lustre-finished ribbon stoneware</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[20px]">radio_button_unchecked</span>
+</button>
+</div>
+</section>
+<!-- Quantity & Primary Purchase CTAs -->
+<section class="px-margin mt-6 space-y-3">
+<div class="flex items-center gap-3">
+<!-- Quantity Selector -->
+<div class="flex items-center justify-between w-28 h-12 px-2 bg-surface-container rounded-lg shadow-sm">
+<button aria-label="Decrease quantity" class="w-8 h-8 rounded flex items-center justify-center text-on-surface hover:text-primary active:scale-95 transition-all" onclick="adjustQty(-1)" type="button">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<span class="font-body-md font-semibold text-on-surface text-[15px]" id="qty-val">1</span>
+<button aria-label="Increase quantity" class="w-8 h-8 rounded flex items-center justify-center text-on-surface hover:text-primary active:scale-95 transition-all" onclick="adjustQty(1)" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<!-- Main Add to Curated Selection CTA -->
+<button class="flex-1 h-12 bg-on-surface hover:bg-primary text-surface-bright rounded-lg font-label-nav text-label-nav uppercase tracking-widest flex items-center justify-center gap-2 shadow-md active:scale-[0.98] transition-all" onclick="triggerToast('Ensemble reserved in Curated Selection')" type="button">
+<span class="material-symbols-outlined text-[18px]">local_mall</span>
+<span>Add to Curated Selection</span>
+</button>
+</div>
+<!-- Secondary CTA: Private Viewing -->
+<button class="w-full h-11 bg-surface-container hover:bg-surface-container-high text-on-surface rounded-lg font-label-nav text-[11px] uppercase tracking-wider flex items-center justify-center gap-2 active:scale-[0.99] transition-all" onclick="triggerToast('Viewing concierge opening for Sidi Bou Saïd')" type="button">
+<span class="material-symbols-outlined text-[17px] text-primary">calendar_month</span>
+<span>Book Private Atelier Viewing (Sidi Bou Saïd)</span>
+</button>
+</section>
+<!-- Expandable Accordions -->
+<section class="px-margin mt-8 space-y-2.5">
+<h3 class="font-label-caps text-label-caps text-on-surface-variant tracking-widest uppercase mb-1">Curation Dossier</h3>
+<!-- Accordion Item 1 -->
+<details class="group bg-surface-container-low rounded-xl shadow-sm overflow-hidden" open="">
+<summary class="flex items-center justify-between p-4 cursor-pointer select-none list-none">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px]">straighten</span>
+<span class="font-title-editorial text-[16px] text-on-surface font-medium">Material &amp; Dimensions</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform duration-200 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-4 pb-4 pt-1 font-body-sm text-body-sm text-on-surface-variant space-y-2">
+<div class="grid grid-cols-2 gap-2 p-2.5 bg-surface-container rounded-lg">
+<div>
+<p class="font-label-caps text-[10px] text-on-surface-variant/80 uppercase">Diameter</p>
+<p class="font-body-md text-on-surface font-medium text-[14px]">Ø 24 cm</p>
+</div>
+<div>
+<p class="font-label-caps text-[10px] text-on-surface-variant/80 uppercase">Vessel Height</p>
+<p class="font-body-md text-on-surface font-medium text-[14px]">H 28 cm</p>
+</div>
+<div>
+<p class="font-label-caps text-[10px] text-on-surface-variant/80 uppercase">Total Mass</p>
+<p class="font-body-md text-on-surface font-medium text-[14px]">2.4 kg (Weighted base)</p>
+</div>
+<div>
+<p class="font-label-caps text-[10px] text-on-surface-variant/80 uppercase">Origin</p>
+<p class="font-body-md text-on-surface font-medium text-[14px]">La Marsa, Tunisia</p>
+</div>
+</div>
+<p class="text-[12px] leading-relaxed pt-1">
+          Mouth-blown sodalime mineral glass annealed over 18 hours. Ceramic ribbon hand-pinched with high-fire refractory grog clay, glazed in deep semi-matte noir.
+        </p>
+</div>
+</details>
+<!-- Accordion Item 2 -->
+<details class="group bg-surface-container-low rounded-xl shadow-sm overflow-hidden">
+<summary class="flex items-center justify-between p-4 cursor-pointer select-none list-none">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px]">spa</span>
+<span class="font-title-editorial text-[16px] text-on-surface font-medium">Care &amp; Preservation</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform duration-200 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-4 pb-4 pt-1 font-body-sm text-body-sm text-on-surface-variant space-y-2">
+<p class="leading-relaxed">
+          Dust gently with soft dry microfiber. Hand wash glass foot using tepid water and pH-neutral organic botanical soap only when required.
+        </p>
+<p class="leading-relaxed text-[12px] text-on-surface-variant/90">
+          The ceramic knot is unsealed on interior structural contact zones to preserve raw tactile clay texture. Avoid abrasive sponges or immersion.
+        </p>
+</div>
+</details>
+<!-- Accordion Item 3 -->
+<details class="group bg-surface-container-low rounded-xl shadow-sm overflow-hidden">
+<summary class="flex items-center justify-between p-4 cursor-pointer select-none list-none">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px]">inventory_2</span>
+<span class="font-title-editorial text-[16px] text-on-surface font-medium">Fragile White-Glove Logistics</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform duration-200 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-4 pb-4 pt-1 font-body-sm text-body-sm text-on-surface-variant space-y-2">
+<p class="leading-relaxed">
+          Shipped inside a custom fitted wooden crate lined with high-density shock-absorbing recycled cork molds.
+        </p>
+<div class="flex items-center gap-2 p-2 bg-surface-container rounded-lg text-primary text-[12px] font-medium">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Insured private courier across all 24 Tunisian governorates within 48–72 hours.</span>
+</div>
+</div>
+</details>
+</section>
+<!-- Editorial Pairing Carousel: 'Complementary Vignette Objects' -->
+<section class="mt-9 pl-margin">
+<div class="pr-margin flex items-end justify-between mb-3.5">
+<div>
+<p class="font-label-caps text-[10px] tracking-widest text-primary uppercase">Harmonious Space</p>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-headline-sm">Complementary Vignette Objects</h3>
+</div>
+<span class="font-label-caps text-[11px] text-on-surface-variant tracking-wider uppercase">2 Compositions</span>
+</div>
+<!-- Horizontal scroll area -->
+<div class="flex gap-4 overflow-x-auto pb-4 pr-margin scrollbar-none snap-x snap-mandatory">
+<!-- Vignette Card 1 -->
+<div class="w-[72vw] max-w-[260px] flex-shrink-0 snap-start bg-surface-container-low rounded-xl p-3 shadow-sm flex flex-col justify-between">
+<div class="w-full aspect-[4/5] rounded-lg overflow-hidden bg-surface-container mb-3 relative">
+<img alt="Complementary sculptural companion piece" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1aqZzaoDXUoYb5XNIHf3dHeUOiapOiyR-4pdaZFYazUMcpmg-ll_4VVdxXbJmTZHOb-yKfJNh9-jheA6GqIZcfb6fgD7WdTkkVBHVlN7dDIry3S0utT-rchvnYgf6Pt_UF8o9-1I29L79FSu-5duYOBcP6nev4CcCZPGiXU3AiX0r16i4ipOJGubi-Q6noWARC3RZYy2jOaIp9LSGwBkSkkPBBxDa7-NdaZ6Eh1NxsCwXvkteVI_OatSwS407U-BL-ts"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface-container-lowest/90 font-label-caps text-[9px] uppercase tracking-wider text-on-surface">Vignette II</span>
+</div>
+<div class="space-y-1">
+<p class="font-label-caps text-[10px] text-primary uppercase tracking-wider">Terracotta &amp; Rattan</p>
+<h4 class="font-title-editorial text-[15px] text-on-surface leading-tight font-medium">No. 07 — Solstice Pedestal Vessel</h4>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-price text-[14px] text-on-surface font-semibold">185 TND</span>
+<button aria-label="Add No. 07 to collection" class="p-1.5 rounded-full bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface transition-colors" onclick="triggerToast('Added No. 07 to paired curation')" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Vignette Card 2 -->
+<div class="w-[72vw] max-w-[260px] flex-shrink-0 snap-start bg-surface-container-low rounded-xl p-3 shadow-sm flex flex-col justify-between">
+<div class="w-full aspect-[4/5] rounded-lg overflow-hidden bg-surface-container mb-3 relative">
+<img alt="Complementary fluted candle totem" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAosgY1YHH0jO7YBuXksBhxvNmoeinbkRU4ZurdzEfuOg-7h8V5itPL1TJYorI80DKwSR3-kshnloMyHfcht_FG4pN2VpV4Y-8QY8rdA5qGCoHvsFLKiI2M27pS0I9yEOcfTBRsY4O4UVD8-zHsUOQNyDkwHSiujI8csR0Em5_ORut4u73NuGn9hlmQTzGUHj2ZqbI5fjcnjk1dtqIIBz6OJT5KYTbEXXSktmLSdrXP3taxhAAVw6j6IlCaXxQcQyQhWDI"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface-container-lowest/90 font-label-caps text-[9px] uppercase tracking-wider text-on-surface">Vignette III</span>
+</div>
+<div class="space-y-1">
+<p class="font-label-caps text-[10px] text-primary uppercase tracking-wider">Wax &amp; Cast Glass</p>
+<h4 class="font-title-editorial text-[15px] text-on-surface leading-tight font-medium">No. 12 — Ribbed Ochre Scent Totem</h4>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-price text-[14px] text-on-surface font-semibold">95 TND</span>
+<button aria-label="Add No. 12 to collection" class="p-1.5 rounded-full bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface transition-colors" onclick="triggerToast('Added No. 12 to paired curation')" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Mobile Floating Sticky Bottom Purchase Bar -->
+<aside aria-label="Quick Purchase Floating Bar" class="fixed bottom-3 inset-x-margin z-40 max-w-md mx-auto">
+<div class="flex items-center justify-between p-2 pl-3 bg-surface-container-lowest/95 backdrop-blur-xl rounded-full shadow-[0_16px_36px_-12px_rgba(41,40,33,0.18)]">
+<!-- Thumbnail & Snapshot -->
+<div class="flex items-center gap-2.5 min-w-0 pr-2">
+<div class="w-10 h-10 rounded-full overflow-hidden flex-shrink-0 bg-surface-container">
+<img alt="Miniature vignette thumb" class="w-full h-full object-cover" id="sticky-thumb" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPH91FV-Cinkmz654uLvJjRqN8p9_YZBixcXHNbqCu2pbBabYExqgvMPDI3-maO_dTYLssLzVm2uq5qkQbZPPtKqrLkCruZK99of3pZilYUAYOWSdEZKG1m1Ri9C3U5T3BE-nmUInjDYM0PIuKq96kF2cSWGmtPVqBtkspzp7mzFLI1xQW8vpiF6m4j_0ia6puCOABbBC4uBVfZau6IH0HCSoLmHHdzP2Poy2rTLHyETUwbsTwUJw_j-5MMJ0BwrNtFlo"/>
+</div>
+<div class="min-w-0">
+<p class="font-title-editorial text-[13px] text-on-surface font-semibold truncate leading-tight">No. 01 — Ambre Fluted</p>
+<p class="font-label-price text-[13px] text-primary font-bold leading-tight">240 TND</p>
+</div>
+</div>
+<!-- Action Button -->
+<button class="h-10 px-4 bg-primary hover:bg-on-surface text-on-primary rounded-full font-label-nav text-[11px] uppercase tracking-widest flex items-center gap-1.5 flex-shrink-0 active:scale-95 transition-all shadow-sm" onclick="triggerToast('Vignette secured in Shopping Bag')" type="button">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span>
+<span>Add to Bag</span>
+</button>
+</div>
+</aside>
+<!-- Interactive Feedback Toast -->
+<div class="fixed top-20 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 translate-y-[-10px] transition-all duration-300" id="toast-pill">
+<div class="px-4 py-2 rounded-full bg-on-surface text-surface-bright shadow-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[16px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-[12px] tracking-wide font-medium" id="toast-message">Curated selection updated</span>
+</div>
+</div>
+</div>
+<script>
+  function changeImage(src, index) {
+    const mainImg = document.getElementById('main-view-image');
+    if (mainImg) {
+      mainImg.style.opacity = '0.35';
+      setTimeout(() => {
+        mainImg.src = src;
+        mainImg.style.opacity = '1';
+      }, 150);
+    }
+    const stickyThumb = document.getElementById('sticky-thumb');
+    if (stickyThumb) {
+      stickyThumb.src = src;
+    }
+    
+    // Update active thumbnail outline
+    const thumbs = document.querySelectorAll('.thumb-btn');
+    thumbs.forEach((thumb, idx) => {
+      if (idx === index) {
+        thumb.style.boxShadow = '0 0 0 1.5px #795434';
+        thumb.classList.remove('opacity-65');
+      } else {
+        thumb.style.boxShadow = 'none';
+        thumb.classList.add('opacity-65');
+      }
+    });
+
+    // Update dots
+    const dots = document.querySelectorAll('.gallery-dot');
+    dots.forEach((dot, idx) => {
+      if (idx === index) {
+        dot.className = 'gallery-dot w-5 h-1 rounded-full bg-primary transition-all duration-300';
+      } else {
+        dot.className = 'gallery-dot w-1.5 h-1 rounded-full bg-surface-container-highest/80 transition-all duration-300';
+      }
+    });
+  }
+
+  function selectVariant(button, variantName) {
+    const cards = document.querySelectorAll('.variant-card');
+    cards.forEach(card => {
+      card.style.boxShadow = 'none';
+      card.classList.remove('bg-surface-container');
+      card.classList.add('bg-surface-container-low', 'opacity-85');
+      const icon = card.querySelector('.material-symbols-outlined');
+      if (icon) {
+        icon.innerText = 'radio_button_unchecked';
+        icon.className = 'material-symbols-outlined text-outline-variant text-[20px]';
+        icon.style.fontVariationSettings = "'FILL' 0";
+      }
+    });
+
+    button.style.boxShadow = '0 0 0 1.5px #795434';
+    button.classList.add('bg-surface-container');
+    button.classList.remove('bg-surface-container-low', 'opacity-85');
+    
+    const activeIcon = button.querySelector('.material-symbols-outlined');
+    if (activeIcon) {
+      activeIcon.innerText = 'check_circle';
+      activeIcon.className = 'material-symbols-outlined text-primary text-[20px]';
+      activeIcon.style.fontVariationSettings = "'FILL' 1";
+    }
+
+    const label = document.getElementById('variant-label');
+    if (label) label.innerText = variantName;
+
+    triggerToast(`Selected variant: ${variantName}`);
+  }
+
+  let qty = 1;
+  function adjustQty(change) {
+    qty = Math.max(1, Math.min(4, qty + change));
+    const qtyEl = document.getElementById('qty-val');
+    if (qtyEl) {
+      qtyEl.innerText = qty;
+      qtyEl.classList.add('scale-125');
+      setTimeout(() => qtyEl.classList.remove('scale-125'), 180);
+    }
+  }
+
+  let toastTimeout;
+  function triggerToast(message) {
+    const toast = document.getElementById('toast-pill');
+    const toastMsg = document.getElementById('toast-message');
+    if (!toast || !toastMsg) return;
+
+    clearTimeout(toastTimeout);
+    toastMsg.innerText = message;
+    toast.classList.remove('opacity-0', 'translate-y-[-10px]');
+    toast.classList.add('opacity-100', 'translate-y-0');
+
+    toastTimeout = setTimeout(() => {
+      toast.classList.remove('opacity-100', 'translate-y-0');
+      toast.classList.add('opacity-0', 'translate-y-[-10px]');
+    }, 2400);
+  }
+</script></main></body></html>

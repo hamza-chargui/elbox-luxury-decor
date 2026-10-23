@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;min-height:100%;margin:0;padding:0;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}details summary::-webkit-details-marker{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'inverse-primary': '#edbd95', 'surface-container-highest': '#e6e2da', 'on-primary': '#ffffff', 'primary-fixed-dim': '#edbd95', 'on-surface': '#1c1c17', 'surface-container-lowest': '#ffffff', 'secondary-fixed-dim': '#cac6bc', 'surface-container': '#f1ede5', 'inverse-surface': '#31302b', 'outline-variant': '#d4c3b8', 'tertiary-container': '#81735c', 'on-secondary-fixed-variant': '#48473f', 'tertiary-fixed': '#f3e0c5', 'tertiary-fixed-dim': '#d6c4aa', 'on-error-container': '#93000a', 'outline': '#82756b', 'on-tertiary': '#ffffff', 'on-tertiary-fixed': '#231a09', 'on-tertiary-container': '#fffbff', 'surface-tint': '#7b5736', 'surface-dim': '#dddad2', 'primary-container': '#946c4a', 'on-primary-fixed-variant': '#613f21', 'on-background': '#1c1c17', 'error-container': '#ffdad6', 'primary-fixed': '#ffdcc1', 'on-primary-container': '#fffbff', 'background': '#fdf9f1', 'primary': '#795434', 'surface-container-high': '#ece8e0', 'secondary': '#605e56', 'secondary-container': '#e6e2d7', 'on-secondary-fixed': '#1d1c15', 'on-secondary-container': '#66645c', 'on-secondary': '#ffffff', 'surface-container-low': '#f7f3eb', 'surface-bright': '#fdf9f1', 'on-tertiary-fixed-variant': '#514531', 'error': '#ba1a1a', 'inverse-on-surface': '#f4f0e8', 'secondary-fixed': '#e6e2d7', 'surface-variant': '#e6e2da', 'on-primary-fixed': '#2e1500', 'on-surface-variant': '#50453c', 'on-error': '#ffffff', 'tertiary': '#675a45', 'surface': '#fdf9f1' }, borderRadius: { 'DEFAULT': '0.125rem', 'lg': '0.25rem', 'xl': '0.5rem', 'full': '0.75rem' }, spacing: { 'space-lg': '1.75rem', 'margin': '1.25rem', 'margin-tablet': '2.5rem', 'gutter-desktop': '2.5rem', 'space-sm': '0.5rem', 'margin-desktop': '4.5rem', 'space-2xl': '5rem', 'gutter': '1.5rem', 'space-xl': '3rem', 'space-xs': '0.25rem', 'space-md': '1rem' }, fontFamily: { 'headline-lg': ['Playfair Display'], 'label-nav': ['Plus Jakarta Sans'], 'headline-md': ['Playfair Display'], 'body-sm': ['Plus Jakarta Sans'], 'body-md': ['Plus Jakarta Sans'], 'display-hero-mobile': ['Playfair Display'], 'label-caps': ['Plus Jakarta Sans'], 'body-lg': ['Plus Jakarta Sans'], 'title-editorial': ['Playfair Display'], 'headline-sm': ['Playfair Display'], 'headline-lg-mobile': ['Playfair Display'], 'display-hero': ['Playfair Display'], 'label-price': ['Plus Jakarta Sans'] }, fontSize: { 'headline-lg': ['40px', { lineHeight: '48px', letterSpacing: '-0.01em', fontWeight: '400' }], 'label-nav': ['12px', { lineHeight: '16px', letterSpacing: '0.10em', fontWeight: '500' }], 'headline-md': ['28px', { lineHeight: '36px', letterSpacing: '0em', fontWeight: '500' }], 'body-sm': ['13px', { lineHeight: '20px', letterSpacing: '0.02em', fontWeight: '400' }], 'body-md': ['15px', { lineHeight: '24px', letterSpacing: '0.01em', fontWeight: '400' }], 'display-hero-mobile': ['36px', { lineHeight: '44px', letterSpacing: '-0.01em', fontWeight: '400' }], 'label-caps': ['11px', { lineHeight: '16px', letterSpacing: '0.14em', fontWeight: '600' }], 'body-lg': ['18px', { lineHeight: '28px', letterSpacing: '0.01em', fontWeight: '400' }], 'title-editorial': ['18px', { lineHeight: '26px', letterSpacing: '0.02em', fontWeight: '600' }], 'headline-sm': ['22px', { lineHeight: '30px', letterSpacing: '0.01em', fontWeight: '500' }], 'headline-lg-mobile': ['28px', { lineHeight: '36px', letterSpacing: '0em', fontWeight: '400' }], 'display-hero': ['56px', { lineHeight: '64px', letterSpacing: '-0.02em', fontWeight: '400' }], 'label-price': ['16px', { lineHeight: '22px', letterSpacing: '0.04em', fontWeight: '600' }] } } } };</script></head><body class="bg-background font-body-md text-on-surface min-h-screen flex flex-col selection:bg-surface-variant"><header class="fixed top-0 w-full z-50 pt-safe"><div class="bg-surface-container-high/95 text-on-surface-variant font-label-caps text-label-caps tracking-widest text-center py-1.5 px-margin uppercase select-none">Complimentary White-Glove Logistics across Tunisia</div><div class="h-20 bg-surface/85 backdrop-blur-xl px-margin flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="flex items-center gap-space-xs"><button aria-label="Open Navigation Menu" class="min-w-[44px] min-h-[44px] flex items-center justify-center text-on-surface transition-colors hover:text-primary" onclick="document.getElementById('mobile-drawer').classList.remove('translate-x-full');document.getElementById('drawer-backdrop').classList.remove('opacity-0','pointer-events-none');" type="button"><span class="material-symbols-outlined text-[26px]">menu</span></button></div><a class="flex items-center" data-path="curated-home" href="#"><span class="font-headline-md text-headline-md tracking-[0.25em] text-on-surface uppercase pl-2">E L B O X</span></a><div class="flex items-center gap-space-xs"><button aria-label="Search Catalog" class="min-w-[44px] min-h-[44px] flex items-center justify-center text-on-surface hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[24px]">search</span></button><a aria-label="Shopping Bag" class="min-w-[44px] min-h-[44px] relative flex items-center justify-center text-on-surface hover:text-primary transition-colors" data-path="shopping-bag" href="#"><span class="material-symbols-outlined text-[24px]">local_mall</span><span class="absolute top-2 right-2 bg-primary text-on-primary font-label-caps text-[10px] w-4 h-4 rounded-full flex items-center justify-center">2</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300" id="drawer-backdrop" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full');document.getElementById('drawer-backdrop').classList.add('opacity-0','pointer-events-none');"></div><aside class="fixed top-0 right-0 h-full w-[85vw] max-w-[380px] z-50 bg-surface flex flex-col justify-between pt-safe pb-safe translate-x-full transition-transform duration-300 ease-out shadow-[-16px_0_36px_-12px_rgba(41,40,33,0.12)]" id="mobile-drawer"><div class="flex flex-col h-full overflow-y-auto px-margin"><div class="h-20 flex items-center justify-between"><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Navigation</span><button class="min-w-[44px] min-h-[44px] flex items-center justify-center text-on-surface hover:text-primary" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full');document.getElementById('drawer-backdrop').classList.add('opacity-0','pointer-events-none');" type="button"><span class="material-symbols-outlined text-[24px]">close</span></button></div><div class="py-space-md flex flex-col gap-space-md"><a class="font-headline-sm text-headline-sm text-on-surface hover:text-primary transition-colors" data-path="shop-catalog" href="#">Shop</a><a class="font-headline-sm text-headline-sm text-on-surface hover:text-primary transition-colors" data-path="curated-collections" href="#">Collections</a><a class="font-headline-sm text-headline-sm text-on-surface hover:text-primary transition-colors" data-path="new-arrivals" href="#">New Arrivals</a><a class="font-headline-sm text-headline-sm text-on-surface hover:text-primary transition-colors" data-path="curated-sets" href="#">Curated Sets</a><a class="font-headline-sm text-headline-sm text-on-surface hover:text-primary transition-colors" data-path="styling-journal" href="#">Styling Journal</a><a class="font-headline-sm text-headline-sm text-on-surface hover:text-primary transition-colors" data-path="about-elbox" href="#">About ELBOX</a><a class="font-headline-sm text-headline-sm text-on-surface hover:text-primary transition-colors" data-path="showroom-appointments" href="#">Showroom Appointments</a></div><div class="mt-auto pt-space-lg pb-space-md"><div class="bg-surface-container-low p-space-md rounded-lg flex items-center justify-between"><div class="flex flex-col"><span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Showrooms</span><span class="font-body-sm text-body-sm text-on-surface">La Marsa • Sidi Bou Saïd</span></div><span class="material-symbols-outlined text-primary">storefront</span></div><div class="mt-space-md flex items-center justify-between pt-space-md"><span class="font-label-nav text-label-nav text-on-surface-variant uppercase">Currency</span><div class="inline-flex items-center gap-space-xs font-label-price text-label-price text-on-surface"><span class="w-2 h-2 rounded-full bg-primary"></span><span>TND (د.ت)</span></div></div></div></div></aside><main class="flex-1 flex flex-col relative w-full pt-20 bg-background"><div class="flex flex-col w-full selection:bg-surface-variant">
+<!-- HERO SECTION -->
+<section class="relative w-full flex flex-col justify-end overflow-hidden min-h-[490px] px-margin pb-space-lg pt-12">
+<!-- Edge-to-Edge Architectural Backdrop -->
+<div class="absolute inset-0 w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCE0DiuWjTutveYsezf5C1KSsHp2hujsgEb12iGpOXKvMX4dQPJBcx6omxgLFmkb2RvgVoTiuk7RfuGuzQXsAiua9e1yDy7p3G0mFLy-Rac2TKF0ZWAbn1I0JyVREgnK9Ug3RoT5VPAOB2haTqdQ73mB_xbiZg-KyHlh5XcZJNFNPgAnu4hJ5WDWaOESSfzvf1Y_ZqPduwNmPllyJng_SHXErQ6YWeG2ColbN6z9gzQMqo5xz_tQvWuQTDjx4cdviInGCY');"></div>
+<!-- Editorial Scrim: Preserves Amber & Florals while ensuring effortless readability -->
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/95 via-inverse-surface/60 to-inverse-surface/20"></div>
+<!-- Hero Content Overlay -->
+<div class="relative z-10 flex flex-col items-start gap-space-sm max-w-sm">
+<div class="inline-flex items-center gap-2 bg-surface-container-low/15 backdrop-blur-md px-3 py-1 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span>
+<span class="font-label-caps text-[10px] tracking-[0.2em] text-surface-container-low uppercase">Atelier Tunis • Collection 2025</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-inverse-on-surface leading-tight tracking-tight mt-1">
+        Make Space for Beautiful Things.
+      </h1>
+<p class="font-body-sm text-body-sm text-surface-container-highest/90 leading-relaxed font-light">
+        Thoughtfully chosen details. Beautifully considered spaces. Crafted for the poetic Mediterranean interior.
+      </p>
+<div class="flex flex-col w-full gap-space-sm pt-2">
+<a class="w-full min-h-[48px] bg-inverse-surface text-surface px-6 py-3 rounded-lg font-label-nav text-label-nav uppercase tracking-widest text-center flex items-center justify-center transition-all duration-300 hover:bg-primary active:scale-[0.99] shadow-md" data-path="shop-catalog" href="#">
+          Explore the Collection
+        </a>
+<a class="inline-flex items-center justify-center gap-2 py-2 text-surface-container-low font-label-caps text-label-caps uppercase tracking-widest hover:text-primary-fixed transition-colors" data-path="about-elbox" href="#">
+<span>Discover ELBOX</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+</div>
+</section>
+<!-- QUICK CATEGORIES CAROUSEL (Horizontal Scroll) -->
+<section class="w-full pt-space-lg pb-space-sm overflow-hidden">
+<div class="px-margin flex items-baseline justify-between mb-3">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Curated Taxonomy</span>
+<span class="font-body-sm text-body-sm text-secondary">Swipe to view</span>
+</div>
+<div class="flex items-center gap-space-sm overflow-x-auto px-margin no-scrollbar pb-2">
+<button class="shrink-0 px-4 py-2.5 rounded-full bg-inverse-surface text-surface font-label-caps text-label-caps tracking-wider uppercase transition-colors whitespace-nowrap">
+        Vases &amp; Sculptural Glass
+      </button>
+<button class="shrink-0 px-4 py-2.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps tracking-wider uppercase hover:bg-surface-container-highest transition-colors whitespace-nowrap">
+        Botanical &amp; Flora
+      </button>
+<button class="shrink-0 px-4 py-2.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps tracking-wider uppercase hover:bg-surface-container-highest transition-colors whitespace-nowrap">
+        Monochrome Obelisks
+      </button>
+<button class="shrink-0 px-4 py-2.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps tracking-wider uppercase hover:bg-surface-container-highest transition-colors whitespace-nowrap">
+        Brass &amp; Earth
+      </button>
+<button class="shrink-0 px-4 py-2.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps tracking-wider uppercase hover:bg-surface-container-highest transition-colors whitespace-nowrap">
+        Scent &amp; Diffusers
+      </button>
+</div>
+</section>
+<!-- CURATED DISCIPLINES / PRODUCT GRID -->
+<section class="px-margin pt-space-lg pb-space-xl">
+<div class="flex flex-col gap-1 mb-space-md">
+<div class="flex items-center gap-2">
+<span class="w-6 h-[1px] bg-primary"></span>
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-[0.2em]">Disciplines &amp; Objects</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Curated Prototypes</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Limited editions, tactile finishes, and sculptural integrity.</p>
+</div>
+<!-- 2-Column Responsive Grid -->
+<div class="grid grid-cols-2 gap-x-3 gap-y-6">
+<!-- Item 1 -->
+<article class="flex flex-col group">
+<div class="relative w-full aspect-[4/5] bg-surface-container rounded-lg overflow-hidden mb-2.5">
+<img alt="Ambre Fluted Globe &amp; Ceramic Knot" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPH91FV-Cinkmz654uLvJjRqN8p9_YZBixcXHNbqCu2pbBabYExqgvMPDI3-maO_dTYLssLzVm2uq5qkQbZPPtKqrLkCruZK99of3pZilYUAYOWSdEZKG1m1Ri9C3U5T3BE-nmUInjDYM0PIuKq96kF2cSWGmtPVqBtkspzp7mzFLI1xQW8vpiF6m4j_0ia6puCOABbBC4uBVfZau6IH0HCSoLmHHdzP2Poy2rTLHyETUwbsTwUJw_j-5MMJ0BwrNtFlo"/>
+<span class="absolute top-2 left-2 bg-surface/90 backdrop-blur-sm px-2 py-0.5 rounded font-label-caps text-[9px] uppercase tracking-wider text-on-surface">
+            REF-ELB-012
+          </span>
+<button aria-label="Add to collection" class="absolute bottom-2 right-2 min-w-[36px] min-h-[36px] w-9 h-9 rounded-full bg-surface/95 backdrop-blur-md shadow-sm text-on-surface flex items-center justify-center transition-all active:scale-90" onclick="this.classList.toggle('bg-primary'); this.classList.toggle('text-on-primary');" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5 min-w-0">
+<span class="font-label-caps text-[10px] text-primary uppercase tracking-widest truncate">Fluted Glass • Stoneware</span>
+<h3 class="font-title-editorial text-[15px] leading-snug text-on-surface truncate group-hover:text-primary transition-colors">
+            Ambre Fluted Globe &amp; Knot
+          </h3>
+<span class="font-label-price text-[13px] text-secondary mt-0.5">Prototype Ref. 240 TND</span>
+</div>
+</article>
+<!-- Item 2 -->
+<article class="flex flex-col group">
+<div class="relative w-full aspect-[4/5] bg-surface-container rounded-lg overflow-hidden mb-2.5">
+<img alt="Cerulean Marine Amphora &amp; Petal Bowl" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBAqBKhtPl1s87jElUta2NyFN7fPFU_Un1vVmkpVcB-3NcsSBcMHuen4crCwBMxO4Gd-Tvo2F209eTdxfAMKl355Vh4KlFMcvZlMIwHtJc7VBHeMz8yY_IH1JhmKXSL5va2f63cNZKViXB8wZQb0P7wFVbotds0K9FHWYkQmNEOg4BMG6aCAua5N9HT_f-nKs1ZGxBrRYQcTQvbRWuDRTmwrtwY8KvDHZjpyrZeYK7zIjQ-GyFCI_j_0VGJPjYnTskAfY"/>
+<span class="absolute top-2 left-2 bg-surface/90 backdrop-blur-sm px-2 py-0.5 rounded font-label-caps text-[9px] uppercase tracking-wider text-on-surface">
+            REF-ELB-022
+          </span>
+<button aria-label="Add to collection" class="absolute bottom-2 right-2 min-w-[36px] min-h-[36px] w-9 h-9 rounded-full bg-surface/95 backdrop-blur-md shadow-sm text-on-surface flex items-center justify-center transition-all active:scale-90" onclick="this.classList.toggle('bg-primary'); this.classList.toggle('text-on-primary');" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5 min-w-0">
+<span class="font-label-caps text-[10px] text-primary uppercase tracking-widest truncate">Glazed Terracotta</span>
+<h3 class="font-title-editorial text-[15px] leading-snug text-on-surface truncate group-hover:text-primary transition-colors">
+            Marine Amphora &amp; Petal Bowl
+          </h3>
+<span class="font-label-price text-[13px] text-secondary mt-0.5">Prototype Ref. 290 TND</span>
+</div>
+</article>
+<!-- Item 3 -->
+<article class="flex flex-col group">
+<div class="relative w-full aspect-[4/5] bg-surface-container rounded-lg overflow-hidden mb-2.5">
+<img alt="Hammered Brass Disc Vessels" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDwfGWdbgYmH5WFBkjHzbSaCGRe8pxgRxwDMbVNr1RmBuAklz661dQB4MGO1tj5iUy_pGApqSL5sN7Ek2GJygRdDMu8fWgAbjY2SaTdP5gngPc3SC-tMABoZ1hlC4FwzbFtdmeOzUA5aHzXF96bsSQr82paVc7u-X3O5KnUHgVJpXpQ1WihlsEumu20BX79EkgwjJAFz2W0qSn3XU0prI091rO0g6fZfp7Zl6XOgwU6Fdnp5bbkY0S8OSkZQTz15CTgSo"/>
+<span class="absolute top-2 left-2 bg-surface/90 backdrop-blur-sm px-2 py-0.5 rounded font-label-caps text-[9px] uppercase tracking-wider text-on-surface">
+            REF-ELB-020
+          </span>
+<button aria-label="Add to collection" class="absolute bottom-2 right-2 min-w-[36px] min-h-[36px] w-9 h-9 rounded-full bg-surface/95 backdrop-blur-md shadow-sm text-on-surface flex items-center justify-center transition-all active:scale-90" onclick="this.classList.toggle('bg-primary'); this.classList.toggle('text-on-primary');" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5 min-w-0">
+<span class="font-label-caps text-[10px] text-primary uppercase tracking-widest truncate">Hand-Beaten Brass</span>
+<h3 class="font-title-editorial text-[15px] leading-snug text-on-surface truncate group-hover:text-primary transition-colors">
+            Hammered Brass Disc Vessels
+          </h3>
+<span class="font-label-price text-[13px] text-secondary mt-0.5">Prototype Ref. 360 TND</span>
+</div>
+</article>
+<!-- Item 4 -->
+<article class="flex flex-col group">
+<div class="relative w-full aspect-[4/5] bg-surface-container rounded-lg overflow-hidden mb-2.5">
+<img alt="Monochrome Human Figurine &amp; Spiral Obelisks" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDO1ph0EDKrAF71I7D1JPvjd8E2Oq_gupQ1_cq41m0DQz-dB0LTYTubIF-XhdjYFMbLNZ_L-idejkj0ryyfDG9_uvoL9tTZxNX05BC4YPZvK08F6BP_lCU87B9FtFu1f3XEimm7aIbc7qWmINJFNfl040C7QucmZ1uLIJYjrfmDEuajuvp0WK23ZkSyz9d_fuzgnr3yr0GN-zqoTD8MpS_bmOa33ZFcYJLMEB_PuM-UyP-HSsEQzgkU-oVWgsKzaLhvq68"/>
+<span class="absolute top-2 left-2 bg-surface/90 backdrop-blur-sm px-2 py-0.5 rounded font-label-caps text-[9px] uppercase tracking-wider text-on-surface">
+            REF-ELB-021
+          </span>
+<button aria-label="Add to collection" class="absolute bottom-2 right-2 min-w-[36px] min-h-[36px] w-9 h-9 rounded-full bg-surface/95 backdrop-blur-md shadow-sm text-on-surface flex items-center justify-center transition-all active:scale-90" onclick="this.classList.toggle('bg-primary'); this.classList.toggle('text-on-primary');" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5 min-w-0">
+<span class="font-label-caps text-[10px] text-primary uppercase tracking-widest truncate">Cast Stone • Charcoal</span>
+<h3 class="font-title-editorial text-[15px] leading-snug text-on-surface truncate group-hover:text-primary transition-colors">
+            Spiral Obelisks &amp; Figurine
+          </h3>
+<span class="font-label-price text-[13px] text-secondary mt-0.5">Prototype Ref. 310 TND</span>
+</div>
+</article>
+</div>
+</section>
+<!-- EDITORIAL STYLING STORY SECTION -->
+<section class="bg-surface-container-low px-margin py-space-xl flex flex-col gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">The Styling Journal • Vol. IV</span>
+<h2 class="font-headline-md text-headline-md text-on-surface leading-snug">
+        How to Anchor a Room — Mediterranean Light &amp; Quiet Forms
+      </h2>
+</div>
+<!-- Editorial Feature Image -->
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-surface-container shadow-sm">
+<img alt="Architectural still life with ambient coastal light and artisanal vessels" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYy7pt4-2e6voWD5qSKpYWbVLQcKRnYuSr4ZqTgWyATVmeEVfWslmgm2FZeMIQ9lsWdKJ4ZqEHDvGkrRIb_A73JMwVK9HJNBCX2tRRZiJD6gNI7Ie_abxT73u5JRLVfZy1PRwZ7mboQuCOV4svQFto_UjtrVeluvWjeMC9IUg9L-mGXWkhgE2X4ygEYVnad9bf_5wMuKzi_6XAimFN8WBQZJOH5Azz_GMFmWxiay-Z8Lhu19gj9_rR1v9YfTnWWuA9agY"/>
+<div class="absolute bottom-3 left-3 right-3 bg-surface/90 backdrop-blur-md p-space-sm rounded-lg">
+<p class="font-body-sm text-[12px] text-on-surface leading-normal italic">
+          “Allow natural sunlight to sculpt each silhouette. Warm earth tones harmonize contrast and calm.”
+        </p>
+</div>
+</div>
+<!-- Styling Tips Micro-Cards -->
+<div class="flex flex-col gap-space-sm">
+<div class="bg-surface p-space-md rounded-lg flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">wb_sunny</span>
+<div class="flex flex-col">
+<h4 class="font-label-caps text-label-caps text-on-surface uppercase tracking-wider">01. Natural Light Calibration</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Place translucent fluted glassware near recessed south-facing openings to refract honey-colored glows across raw surfaces.
+          </p>
+</div>
+</div>
+<div class="bg-surface p-space-md rounded-lg flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">balance</span>
+<div class="flex flex-col">
+<h4 class="font-label-caps text-label-caps text-on-surface uppercase tracking-wider">02. Asymmetrical Elevation</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Pair vertical monoliths alongside low, beaten brass trays to anchor focal alcoves without rigid symmetry.
+          </p>
+</div>
+</div>
+</div>
+<a class="inline-flex items-center gap-2 text-primary font-label-nav text-label-nav tracking-widest uppercase pt-1" data-path="styling-journal" href="#">
+<span>Read the Complete Essay</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</section>
+<!-- TRUST & WHITE-GLOVE LOGISTICS STRIP -->
+<section class="px-margin py-space-xl flex flex-col gap-space-lg">
+<div class="text-center flex flex-col items-center gap-1">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">The ELBOX Standard</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Uncompromising Care</h3>
+</div>
+<div class="grid grid-cols-1 gap-space-sm">
+<!-- Pillar 1 -->
+<div class="bg-surface-container p-space-md rounded-lg flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">local_shipping</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-editorial text-[16px] text-on-surface">All 24 Tunisian Governorates</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Bespoke wood-crated, insured white-glove transport directly to your residence.
+          </span>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-surface-container p-space-md rounded-lg flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-editorial text-[16px] text-on-surface">La Marsa Inspection</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Every sculptural vessel is hand-finished and stamped with our studio authenticity seal.
+          </span>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-surface-container p-space-md rounded-lg flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">chair</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-editorial text-[16px] text-on-surface">Private Salon Consultations</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Reserve dedicated interior curation appointments at our Sidi Bou Saïd atelier.
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- NEWSLETTER & ATELIER CIRCLE -->
+<section class="bg-inverse-surface text-inverse-on-surface px-margin py-space-xl flex flex-col gap-space-md">
+<div class="flex flex-col gap-2">
+<span class="font-label-caps text-[10px] text-primary-fixed tracking-[0.25em] uppercase">Private Atelier Dispatch</span>
+<h3 class="font-headline-md text-headline-md text-inverse-on-surface leading-tight">
+        Join the ELBOX Collector Circle
+      </h3>
+<p class="font-body-sm text-body-sm text-surface-container-highest/80">
+        Receive confidential invites to new kiln unboxings, seasonal releases, and architectural dialogues.
+      </p>
+</div>
+<form class="flex flex-col gap-3 mt-1" onsubmit="event.preventDefault(); document.getElementById('signup-feedback').classList.remove('hidden'); this.reset();">
+<div class="relative w-full">
+<input class="w-full bg-surface-container-low/10 text-inverse-on-surface placeholder:text-surface-container-highest/40 font-body-sm text-body-sm px-4 py-3.5 rounded-lg focus:outline-none focus:bg-surface-container-low/20 transition-all" placeholder="Enter your email address" required="" type="email"/>
+</div>
+<button class="w-full min-h-[48px] bg-primary-fixed text-on-primary-fixed font-label-nav text-label-nav uppercase tracking-widest py-3.5 rounded-lg hover:bg-primary-fixed-dim transition-colors active:scale-[0.99] font-medium" type="submit">
+        Request Access
+      </button>
+<div class="hidden text-primary-fixed font-body-sm text-body-sm pt-1 flex items-center gap-2" id="signup-feedback">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Welcome. You are registered for the next dispatch.</span>
+</div>
+</form>
+<div class="pt-2 flex items-center justify-between">
+<a class="font-label-caps text-[10px] text-surface-container-highest/70 hover:text-primary-fixed tracking-widest uppercase transition-colors" data-path="care-logistics" href="#">
+        Private Concierge • WhatsApp Care
+      </a>
+<span class="font-label-caps text-[10px] text-surface-container-highest/40 tracking-wider">GMT+1 TUNIS</span>
+</div>
+</section>
+</div><footer class="bg-surface-container-low px-margin pt-space-xl pb-24 mt-space-2xl"><div class="flex flex-col gap-space-sm"><details class="group"><summary class="min-h-[44px] flex items-center justify-between cursor-pointer list-none py-space-sm font-label-caps text-label-caps text-on-surface uppercase tracking-wider"><span>Collections</span><span class="material-symbols-outlined text-[20px] transition-transform duration-200 group-open:rotate-180 text-secondary">expand_more</span></summary><div class="flex flex-col gap-space-xs pb-space-sm pt-space-xs"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary py-1" data-path="curated-collections" href="#">Earthen Vessels &amp; Pottery</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary py-1" data-path="curated-collections" href="#">Architectural Lighting</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary py-1" data-path="curated-collections" href="#">Linen &amp; Textile Art</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary py-1" data-path="curated-collections" href="#">Sculptural Furniture</a></div></details><details class="group"><summary class="min-h-[44px] flex items-center justify-between cursor-pointer list-none py-space-sm font-label-caps text-label-caps text-on-surface uppercase tracking-wider"><span>Bespoke Services</span><span class="material-symbols-outlined text-[20px] transition-transform duration-200 group-open:rotate-180 text-secondary">expand_more</span></summary><div class="flex flex-col gap-space-xs pb-space-sm pt-space-xs"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary py-1" data-path="showroom-appointments" href="#">Private Architectural Consultation</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary py-1" data-path="showroom-appointments" href="#">Custom Ceramic Commission</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary py-1" data-path="showroom-appointments" href="#">White-Glove Delivery Protocol</a></div></details><details class="group"><summary class="min-h-[44px] flex items-center justify-between cursor-pointer list-none py-space-sm font-label-caps text-label-caps text-on-surface uppercase tracking-wider"><span>Client Care</span><span class="material-symbols-outlined text-[20px] transition-transform duration-200 group-open:rotate-180 text-secondary">expand_more</span></summary><div class="flex flex-col gap-space-xs pb-space-sm pt-space-xs"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary py-1" data-path="care-logistics" href="#">Tunisia Logistics &amp; Delivery</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary py-1" data-path="care-logistics" href="#">Certificate of Authenticity</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary py-1" data-path="care-logistics" href="#">Material Maintenance Guide</a></div></details></div><div class="pt-space-lg text-center"><p class="font-headline-sm text-headline-sm tracking-[0.2em] uppercase text-on-surface mb-2">ELBOX</p><p class="font-label-caps text-label-caps text-outline uppercase tracking-widest">© 2025 ELBOX ARCHITECTURAL ATELIER • TUNIS</p></div></footer></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(41,40,33,0.04)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-margin"><a aria-current="page" class="flex flex-col items-center justify-center gap-1 w-16 h-12 transition-colors text-primary font-semibold" data-path="curated-home" href="#"><span class="material-symbols-outlined text-[22px]">villa</span><span class="font-label-nav text-[10px] uppercase tracking-wider">Home</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-12 text-on-surface-variant transition-colors" data-path="shop-catalog" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-nav text-[10px] uppercase tracking-wider">Catalog</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-12 text-on-surface-variant transition-colors" data-path="curated-sets" href="#"><span class="material-symbols-outlined text-[22px]">auto_awesome_motion</span><span class="font-label-nav text-[10px] uppercase tracking-wider">Sets</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-12 text-on-surface-variant transition-colors" data-path="styling-journal" href="#"><span class="material-symbols-outlined text-[22px]">auto_stories</span><span class="font-label-nav text-[10px] uppercase tracking-wider">Journal</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-12 text-on-surface-variant transition-colors" data-path="showroom-appointments" href="#"><span class="material-symbols-outlined text-[22px]">calendar_today</span><span class="font-label-nav text-[10px] uppercase tracking-wider">Atelier</span></a></div></nav></body></html>

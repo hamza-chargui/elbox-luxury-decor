@@ -1,0 +1,236 @@
+---
+name: Atelier Terre
+colors:
+  surface: '#fdf9f1'
+  surface-dim: '#dddad2'
+  surface-bright: '#fdf9f1'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#f7f3eb'
+  surface-container: '#f1ede5'
+  surface-container-high: '#ece8e0'
+  surface-container-highest: '#e6e2da'
+  on-surface: '#1c1c17'
+  on-surface-variant: '#50453c'
+  inverse-surface: '#31302b'
+  inverse-on-surface: '#f4f0e8'
+  outline: '#82756b'
+  outline-variant: '#d4c3b8'
+  surface-tint: '#7b5736'
+  primary: '#795434'
+  on-primary: '#ffffff'
+  primary-container: '#946c4a'
+  on-primary-container: '#fffbff'
+  inverse-primary: '#edbd95'
+  secondary: '#605e56'
+  on-secondary: '#ffffff'
+  secondary-container: '#e6e2d7'
+  on-secondary-container: '#66645c'
+  tertiary: '#675a45'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#81735c'
+  on-tertiary-container: '#fffbff'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#ffdcc1'
+  primary-fixed-dim: '#edbd95'
+  on-primary-fixed: '#2e1500'
+  on-primary-fixed-variant: '#613f21'
+  secondary-fixed: '#e6e2d7'
+  secondary-fixed-dim: '#cac6bc'
+  on-secondary-fixed: '#1d1c15'
+  on-secondary-fixed-variant: '#48473f'
+  tertiary-fixed: '#f3e0c5'
+  tertiary-fixed-dim: '#d6c4aa'
+  on-tertiary-fixed: '#231a09'
+  on-tertiary-fixed-variant: '#514531'
+  background: '#fdf9f1'
+  on-background: '#1c1c17'
+  surface-variant: '#e6e2da'
+typography:
+  display-hero:
+    fontFamily: Playfair Display
+    fontSize: 56px
+    fontWeight: '400'
+    lineHeight: 64px
+    letterSpacing: -0.02em
+  display-hero-mobile:
+    fontFamily: Playfair Display
+    fontSize: 36px
+    fontWeight: '400'
+    lineHeight: 44px
+    letterSpacing: -0.01em
+  headline-lg:
+    fontFamily: Playfair Display
+    fontSize: 40px
+    fontWeight: '400'
+    lineHeight: 48px
+    letterSpacing: -0.01em
+  headline-lg-mobile:
+    fontFamily: Playfair Display
+    fontSize: 28px
+    fontWeight: '400'
+    lineHeight: 36px
+    letterSpacing: 0em
+  headline-md:
+    fontFamily: Playfair Display
+    fontSize: 28px
+    fontWeight: '500'
+    lineHeight: 36px
+    letterSpacing: 0em
+  headline-sm:
+    fontFamily: Playfair Display
+    fontSize: 22px
+    fontWeight: '500'
+    lineHeight: 30px
+    letterSpacing: 0.01em
+  title-editorial:
+    fontFamily: Playfair Display
+    fontSize: 18px
+    fontWeight: '600'
+    lineHeight: 26px
+    letterSpacing: 0.02em
+  body-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 18px
+    fontWeight: '400'
+    lineHeight: 28px
+    letterSpacing: 0.01em
+  body-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 15px
+    fontWeight: '400'
+    lineHeight: 24px
+    letterSpacing: 0.01em
+  body-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 13px
+    fontWeight: '400'
+    lineHeight: 20px
+    letterSpacing: 0.02em
+  label-caps:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 11px
+    fontWeight: '600'
+    lineHeight: 16px
+    letterSpacing: 0.14em
+  label-price:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 16px
+    fontWeight: '600'
+    lineHeight: 22px
+    letterSpacing: 0.04em
+  label-nav:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 12px
+    fontWeight: '500'
+    lineHeight: 16px
+    letterSpacing: 0.10em
+rounded:
+  sm: 0.125rem
+  DEFAULT: 0.25rem
+  md: 0.375rem
+  lg: 0.5rem
+  xl: 0.75rem
+  full: 9999px
+spacing:
+  gutter: 1.5rem
+  gutter-desktop: 2.5rem
+  margin: 1.25rem
+  margin-tablet: 2.5rem
+  margin-desktop: 4.5rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.75rem
+  space-xl: 3rem
+  space-2xl: 5rem
+---
+
+## Brand & Style
+
+This design system channels an editorial, quiet-luxury ethos tailored for artisanal interior spaces and boutique home décor. Rooted in tactile materiality, Mediterranean architectural niches, and warm sun-bleached ceramics, the interface behaves like an upscale art catalog rather than a transactional store. 
+
+The aesthetic philosophy centers on:
+- **Architectural Minimalism**: Expansive ivory canvas, intentional asymmetry, generous negative space, and curated compositions that let high-resolution artisanal photography breathe.
+- **Understated Materiality**: Soft sand overlays, warm earth tones, and delicate hairline separators instead of artificial gradients or heavy card surfaces.
+- **Restraint & Poise**: Subtle, precise micro-interactions with gentle transitions. Opulent cues come from high-contrast serif headlines, balanced proportions, and curated craft details rather than overt or generic ornamentation.
+
+## Colors
+
+The palette draws directly from carved stone, kiln-fired terracotta, warm sand, and artisanal glassware:
+- **Primary (`#98704D`)**: Muted Amber. Used selectively for purposeful focal points, active state highlights, curated badges, and high-impact calls to action.
+- **Secondary (`#292821`)**: Deep Charcoal. Grounded, warm-black used for crisp typography, high-contrast buttons, structured architectural lines, and deep ground surfaces.
+- **Tertiary (`#D8C6AC`)**: Soft Sand. Serves as container fills, subtle hover layers, chip backgrounds, and divider accents that bridge foreground elements to background stone.
+- **Neutral (`#F6F2EA`)**: Warm Ivory. The primary canvas substrate evoking unbleached linen and polished plaster.
+
+### Functional Roles & Contrast
+- **Surface Background**: `#F6F2EA` provides a tactile, light atmosphere that prevents optical glare.
+- **Surface Layer 1**: `#EFE9DD` for subtly nested cards and product pedestals.
+- **Hairline Borders**: `#E3DAC9` and `#D8C6AC` at 60% opacity for precise, delicate partitioning.
+- **Text Primary**: `#292821` provides uncompromised contrast against the ivory background.
+- **Text Muted**: `#7B7467` for metadata, dimensions, and secondary editorial descriptions.
+
+## Typography
+
+The typographic tension pairs the classical, high-contrast romance of Playfair Display with the clean, contemporary clarity of Plus Jakarta Sans.
+
+- **Headlines & Editorial Titles**: Rendered in Playfair Display to establish an upscale gallery feel. Editorial headlines preserve balanced letterforms with natural proportions and comfortable line heights.
+- **Labels, Navigation, and Pricing**: Set in Plus Jakarta Sans. Uppercase micro-copy (`label-caps`, `label-nav`) features generous letter-spacing (`0.10em` to `0.14em`), conferring an architectural, high-fashion cadence.
+- **Body & Storytelling**: Balanced weights with open counters ensure maximum legibility for artisanal provenance notes, dimensions, and craft details.
+
+## Layout & Spacing
+
+The layout adopts an editorial fluid grid, alternating between strict structural alignment and rhythmic asymmetric focal blocks.
+
+- **Grid Architecture**: 12-column layout on desktop with `2.5rem` gutters, collapsing to 6 columns on tablet and 2 or 4 columns on mobile.
+- **Canvas Margins**: Deep outer margins (`4.5rem` on desktop) anchor content inward, providing an exclusive showroom frame.
+- **Asymmetric Offsets**: Select product hero galleries use 7/5 or 8/4 column splits where text and imagery intentionally counter-balance each other, echoing architectural niches and gallery displays.
+- **Vertical Flow**: Significant inter-section vertical breathing room (`space-2xl` / `5rem` to `8rem`) ensures that each curated collection feels like an individual exhibition.
+
+## Elevation & Depth
+
+To maintain quiet luxury and architectural authenticity, avoid heavy drop shadows, harsh plastic blurs, and glossy gradients.
+
+- **Tonal Layering**: Depth is achieved predominantly through muted surface shifts. A container placed over Warm Ivory (`#F6F2EA`) adopts Soft Sand tinting (`#EFE9DD` or `#E6DFC7`) rather than an artificial shadow.
+- **Low-Contrast Hairlines**: Thin, 1px structural borders in `#D8C6AC` or `#292821` (at 12–20% opacity) separate elements cleanly without visual weight.
+- **Ambient Ceramic Occlusion**: When depth is required for floating navigation or quick-view drawers, utilize an ultra-diffused, ambient shadow tinted with warm umber:
+  `box-shadow: 0 16px 36px -12px rgba(41, 40, 33, 0.08), 0 4px 12px -2px rgba(41, 40, 33, 0.04);`
+
+## Shapes
+
+The design system maintains a refined, tailored architectural profile through crisp corners softened by subtle, nearly imperceptible curvature:
+- **Base Corner Radius (`0.25rem` / `4px`)**: Applied to interactive inputs, cards, image frames, and buttons. This avoids brutalist harshness while remaining disciplined and avoiding playful, overly rounded shapes.
+- **Contained Modules**: Secondary utility badges and subtle detail chips scale up to a maximum radius of `0.5rem` (`rounded-lg`).
+- **Pill Shapes Prohibited**: Pill buttons, oversized floating bubbles, and heavily rounded surfaces are strictly excluded to preserve an architectural silhouette.
+
+## Components
+
+### Buttons
+- **Primary CTA**: `#292821` background, `#F6F2EA` text, 0.25rem border-radius. Uppercase `label-nav` typography with generous tracking. Padding: `0.875rem 2rem`. Subtle hover transition to `#98704D`.
+- **Secondary / Ghost**: Transparent background, 1px border in `#292821` (or `#D8C6AC` on dark surfaces), text in `#292821`. Hover fills gently with `#EFE9DD`.
+- **Editorial Text Link**: Inline text link accompanied by a fine bottom border underline with an offset of 4px.
+
+### Product Cards
+- **Structure**: Borderless container over `#F6F2EA` with an aspect ratio of 3:4 or 4:5 for imagery. Background of the image frame sits in `#EFE9DD`.
+- **Content Hierarchy**: 
+  1. Micro-label craft category in uppercase (`label-caps`, color `#98704D`).
+  2. Product title in `title-editorial` (`Playfair Display`, color `#292821`).
+  3. Price set in `label-price` (`Plus Jakarta Sans`).
+- **Interaction**: On hover, image scales imperceptibly (1.02x scale, 400ms ease) with an understated secondary image dissolve. No pop-out drop shadows.
+
+### Chips & Badges
+- **Editorial Badges**: Background `#D8C6AC` at 35% opacity, text `#292821`, 1px border `#D8C6AC`. Sizing: `0.25rem 0.75rem`, letter spacing `0.12em` uppercase.
+- **Filter Chips**: Soft sand background with 1px border in `#E3DAC9`. Selected state adopts `#292821` background with `#F6F2EA` text.
+
+### Input Fields
+- **Text Fields**: Subdued warm background `#FAF8F5`, bottom-only or delicate 4-sided 1px border in `#D8C6AC`. 0.25rem corner radius. Padding: `0.75rem 1rem`. Focus state transitions border to `#98704D` with zero glow rings.
+- **Labels**: Floating or top-aligned `label-caps` in `#7B7467`.
+
+### Selection Controls (Checkboxes & Radios)
+- **Checkboxes**: Crisp 16px square with 2px radius, 1px border `#7B7467`. Checked state fills `#292821` with a fine ivory checkmark.
+- **Radio Buttons**: Crisp concentric circle. Selected state shows a solid `#292821` center dot separated by a 2px ivory buffer.
+
+### Gallery Pedestals & Niches
+- Dedicated editorial component for curated collections: Asymmetric block modules styled like gallery alcoves, utilizing alternating spans across the grid with inset photography and contextual artisan notes.

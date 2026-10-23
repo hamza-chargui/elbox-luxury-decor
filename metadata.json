@@ -1,0 +1,6 @@
+{
+  "name": "ELBOX — Bespoke Luxury Home Décor",
+  "description": "An artisanal design atelier in Tunis curating tactile architectural objects, Mediterranean ceramic compositions, and bespoke quiet-luxury décor for discerning private residences.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
